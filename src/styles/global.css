@@ -1,0 +1,29 @@
+body {
+  background: var(--color-background);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.container {
+  width: min(
+    calc(100% - (var(--container-padding) * 2)),
+    var(--container-max-width)
+  );
+
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: var(--space-4xl);
+}
+
+.section--alt {
+  background: var(--color-background-alt);
+}
+
+.section--dark {
+  color: var(--color-text-inverse);
+  background: var(--color-surface-dark);
+}
