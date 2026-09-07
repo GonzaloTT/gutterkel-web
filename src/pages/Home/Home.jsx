@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Hero from "../../components/Hero/Hero";
 import SolutionCard from "../../components/SolutionCard/SolutionCard";
 import solutions from "../../data/solutions";
+import ProcessStep from "../../components/ProcessStep/ProcessStep";
 
 import {
   ArrowRightIcon,
@@ -12,6 +13,10 @@ import {
   QuoteIcon,
   ShieldIcon,
   WhatsAppIcon,
+  CheckCircleIcon,
+  LightningIcon,
+  ToolsIcon,
+  TuneIcon,
 } from "../../components/Icons/Icons";
 
 import "./Home.css";
@@ -59,6 +64,45 @@ function Home() {
       title: "Fijación oculta",
       description: "Acabado limpio y funcional",
       icon: <HiddenFixingIcon />,
+    },
+  ];
+
+  const processSteps = [
+    {
+      number: "01",
+      title: "Cuéntanos sobre tu proyecto",
+      description:
+        "Compártenos las características generales de tu obra y la solución que estás buscando.",
+      meta: "Respuesta rápida",
+      icon: <LightningIcon />,
+      tone: "success",
+    },
+    {
+      number: "02",
+      title: "Evaluamos tus necesidades",
+      description:
+        "Analizamos el proyecto para identificar la solución técnica y arquitectónica más adecuada.",
+      meta: "Asesoría personalizada",
+      icon: <TuneIcon />,
+      tone: "primary",
+    },
+    {
+      number: "03",
+      title: "Fabricamos a medida",
+      description:
+        "Adaptamos la solución a las dimensiones y condiciones específicas de cada proyecto.",
+      meta: "Solución personalizada",
+      icon: <ToolsIcon />,
+      tone: "dark",
+    },
+    {
+      number: "04",
+      title: "Instalamos y entregamos",
+      description:
+        "Realizamos la instalación y verificamos que la solución quede correctamente integrada.",
+      meta: "Entrega verificada",
+      icon: <CheckCircleIcon />,
+      tone: "success",
     },
   ];
 
@@ -221,6 +265,34 @@ function Home() {
                 según las necesidades de cada obra.
               </p>
             </article>
+          </div>
+        </div>
+      </section>
+      <section className="home-process section">
+        <div className="container">
+          <div className="home-process__header">
+            <span className="home-process__eyebrow">
+              De la idea a la instalación
+            </span>
+
+            <h2 className="home-process__title">
+              Proceso ágil y profesional
+            </h2>
+
+            <p className="home-process__description">
+              Acompañamos cada proyecto desde el primer contacto hasta la
+              implementación de la solución, manteniendo un proceso claro
+              y ordenado en cada etapa.
+            </p>
+          </div>
+
+          <div className="home-process__grid">
+            {processSteps.map((step) => (
+              <ProcessStep
+                key={step.number}
+                {...step}
+              />
+            ))}
           </div>
         </div>
       </section>
