@@ -7,6 +7,8 @@ function Button({
   to,
   href,
   variant = "primary",
+  icon,
+  iconPosition = "left",
   className = "",
   ...props
 }) {
@@ -18,6 +20,26 @@ function Button({
     .filter(Boolean)
     .join(" ");
 
+  const content = (
+    <>
+      {icon && iconPosition === "left" && (
+        <span className="button__icon">
+          {icon}
+        </span>
+      )}
+
+      <span className="button__label">
+        {children}
+      </span>
+
+      {icon && iconPosition === "right" && (
+        <span className="button__icon">
+          {icon}
+        </span>
+      )}
+    </>
+  );
+
   if (to) {
     return (
       <Link
@@ -25,7 +47,7 @@ function Button({
         className={classes}
         {...props}
       >
-        {children}
+        {content}
       </Link>
     );
   }
@@ -36,7 +58,7 @@ function Button({
       className={classes}
       {...props}
     >
-      {children}
+      {content}
     </a>
   );
 }

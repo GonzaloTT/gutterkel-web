@@ -3,6 +3,8 @@
   align-items: center;
   justify-content: center;
 
+  gap: 0.5rem;
+
   min-height: 44px;
   padding: 0.75rem 1.25rem;
 
@@ -25,6 +27,20 @@
   transform: translateY(-1px);
 }
 
+.button__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.button__label {
+  display: inline-block;
+}
+
+/* Primary */
+
 .button--primary {
   color: var(--color-white);
   background: var(--color-primary);
@@ -33,6 +49,8 @@
 .button--primary:hover {
   background: var(--color-primary-dark);
 }
+
+/* Secondary */
 
 .button--secondary {
   color: var(--color-text);
@@ -47,12 +65,21 @@
   border-color: var(--color-primary);
 }
 
+/* Outline */
+
 .button--outline {
   color: var(--color-primary);
   background: transparent;
 
   border-color: var(--color-primary);
 }
+
+.button--outline:hover {
+  color: var(--color-white);
+  background: var(--color-primary);
+}
+
+/* WhatsApp */
 
 .button--whatsapp {
   color: var(--color-white);
