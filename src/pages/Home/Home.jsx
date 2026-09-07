@@ -4,6 +4,7 @@ import Hero from "../../components/Hero/Hero";
 import SolutionCard from "../../components/SolutionCard/SolutionCard";
 import solutions from "../../data/solutions";
 import ProcessStep from "../../components/ProcessStep/ProcessStep";
+import CTASection from "../../components/CTASection/CTASection";
 
 import {
   ArrowRightIcon,
@@ -17,6 +18,7 @@ import {
   LightningIcon,
   ToolsIcon,
   TuneIcon,
+  PhoneIcon
 } from "../../components/Icons/Icons";
 
 import "./Home.css";
@@ -103,6 +105,27 @@ function Home() {
       meta: "Entrega verificada",
       icon: <CheckCircleIcon />,
       tone: "success",
+    },
+  ];
+
+  const homeCtaActions = [
+    {
+      label: "Solicitar cotización",
+      to: "/contacto",
+      variant: "primary",
+      icon: <QuoteIcon />,
+    },
+    {
+      label: "Contactar por WhatsApp",
+      href: "#",
+      variant: "whatsapp",
+      icon: <WhatsAppIcon />,
+    },
+    {
+      label: "Llamar ahora",
+      href: "tel:+524423209124",
+      variant: "secondary",
+      icon: <PhoneIcon />,
     },
   ];
 
@@ -296,6 +319,12 @@ function Home() {
           </div>
         </div>
       </section>
+      <CTASection
+        eyebrow="Atención personalizada"
+        title="¿Tienes un proyecto en mente?"
+        description="Te ayudamos a encontrar la solución adecuada para proteger y mejorar tu construcción. Cuéntanos qué necesitas y nuestro equipo se pondrá en contacto contigo."
+        actions={homeCtaActions}
+      />
     </>
   );
 }
