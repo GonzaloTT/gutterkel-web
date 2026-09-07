@@ -1,4 +1,8 @@
+import { Link } from "react-router-dom";
+
 import Hero from "../../components/Hero/Hero";
+import SolutionCard from "../../components/SolutionCard/SolutionCard";
+import solutions from "../../data/solutions";
 
 import {
   ArrowRightIcon,
@@ -68,6 +72,44 @@ function Home() {
         actions={heroActions}
         highlights={heroHighlights}
       />
+      <section className="home-solutions section">
+        <div className="container">
+          <div className="home-solutions__header">
+            <div>
+              <span className="home-solutions__eyebrow">
+                Catálogo técnico especializado
+              </span>
+
+              <h2 className="home-solutions__title">
+                Soluciones para cada proyecto
+              </h2>
+
+              <p className="home-solutions__description">
+                Sistemas arquitectónicos diseñados para proteger,
+                resolver necesidades técnicas y adaptarse a cada tipo
+                de proyecto.
+              </p>
+            </div>
+
+            <Link
+              to="/soluciones"
+              className="home-solutions__all-link"
+            >
+              Explorar todas las líneas
+              <ArrowRightIcon size={16} />
+            </Link>
+          </div>
+
+          <div className="home-solutions__grid">
+            {solutions.map((solution) => (
+              <SolutionCard
+                key={solution.id}
+                {...solution}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 }
