@@ -110,6 +110,120 @@ function Home() {
           </div>
         </div>
       </section>
+      <section
+        id="nosotros"
+        className="home-benefits section scroll-target"
+      >
+        <div className="container">
+          <div className="home-benefits__header">
+            <span className="home-benefits__eyebrow">
+              Estándares industriales de alto nivel
+            </span>
+
+            <h2 className="home-benefits__title">
+              Por qué arquitectos y constructores eligen Gutterkel
+            </h2>
+
+            <p className="home-benefits__description">
+              Integramos fabricación especializada, soluciones técnicas
+              y atención personalizada para responder a las necesidades
+              de cada proyecto arquitectónico.
+            </p>
+          </div>
+
+          <div className="home-benefits__grid">
+            <article className="home-benefit-card">
+              <div className="home-benefit-card__icon">
+                <span aria-hidden="true">EU</span>
+              </div>
+
+              <h3 className="home-benefit-card__title">
+                Tecnología europea
+              </h3>
+
+              <p className="home-benefit-card__description">
+                Aplicamos soluciones y procesos especializados orientados
+                a lograr acabados precisos y durables.
+              </p>
+            </article>
+
+            <article className="home-benefit-card">
+              <div className="home-benefit-card__icon">
+                <span aria-hidden="true">↔</span>
+              </div>
+
+              <h3 className="home-benefit-card__title">
+                Fabricación a medida
+              </h3>
+
+              <p className="home-benefit-card__description">
+                Adaptamos cada sistema a las dimensiones y necesidades
+                específicas de cada proyecto.
+              </p>
+            </article>
+
+            <article className="home-benefit-card">
+              <div className="home-benefit-card__icon">
+                <span aria-hidden="true">⌂</span>
+              </div>
+
+              <h3 className="home-benefit-card__title">
+                Soluciones especializadas
+              </h3>
+
+              <p className="home-benefit-card__description">
+                Integramos soluciones para canalización pluvial,
+                protección arquitectónica y acabados técnicos.
+              </p>
+            </article>
+
+            <article className="home-benefit-card">
+              <div className="home-benefit-card__icon">
+                <span aria-hidden="true">✓</span>
+              </div>
+
+              <h3 className="home-benefit-card__title">
+                Instalación profesional
+              </h3>
+
+              <p className="home-benefit-card__description">
+                Nuestro enfoque prioriza una instalación limpia,
+                ordenada y adecuada para cada aplicación.
+              </p>
+            </article>
+
+            <article className="home-benefit-card">
+              <div className="home-benefit-card__icon">
+                <span aria-hidden="true">◇</span>
+              </div>
+
+              <h3 className="home-benefit-card__title">
+                Protección arquitectónica
+              </h3>
+
+              <p className="home-benefit-card__description">
+                Diseñamos soluciones que ayudan a reducir humedad,
+                escurrimientos y deterioro en fachadas.
+              </p>
+            </article>
+
+            <article className="home-benefit-card">
+              <div className="home-benefit-card__icon">
+                <span aria-hidden="true">◎</span>
+              </div>
+
+              <h3 className="home-benefit-card__title">
+                Cobertura nacional
+              </h3>
+
+              <p className="home-benefit-card__description">
+                Atendemos proyectos en distintas regiones de México
+                según las necesidades de cada obra.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
