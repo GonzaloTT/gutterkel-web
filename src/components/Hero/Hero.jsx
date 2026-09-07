@@ -20,17 +20,27 @@ function Hero({
     .filter(Boolean)
     .join(" ");
 
-  const heroStyle = image
-    ? {
-        backgroundImage: `url(${image})`,
-      }
-    : undefined;
+  const heroStyle =
+    variant === "home" && image
+      ? {
+          "--hero-background-image": `url("${image}")`,
+        }
+      : undefined;
 
   return (
     <section
       className={heroClasses}
       style={heroStyle}
     >
+      {variant === "home" && !image && (
+        <div
+          className="hero__background-placeholder"
+          aria-hidden="true"
+        >
+          <span>Imagen pendiente</span>
+        </div>
+      )}
+
       <div className="container hero__container">
         <div className="hero__content">
           {eyebrow && (
@@ -57,6 +67,10 @@ function Hero({
                   to={action.to}
                   href={action.href}
                   variant={action.variant}
+                  icon={action.icon}
+                  iconPosition={action.iconPosition}
+                  target={action.target}
+                  rel={action.rel}
                 >
                   {action.label}
                 </Button>
@@ -80,13 +94,13 @@ function Hero({
                   </span>
                 )}
 
-                <div>
-                  <strong>
+                <div className="hero__highlight-content">
+                  <strong className="hero__highlight-title">
                     {item.title}
                   </strong>
 
                   {item.description && (
-                    <span>
+                    <span className="hero__highlight-description">
                       {item.description}
                     </span>
                   )}

@@ -1,5 +1,15 @@
 import Hero from "../../components/Hero/Hero";
 
+import {
+  ArrowRightIcon,
+  GlobeIcon,
+  HiddenFixingIcon,
+  MeasureIcon,
+  QuoteIcon,
+  ShieldIcon,
+  WhatsAppIcon,
+} from "../../components/Icons/Icons";
+
 import "./Home.css";
 
 function Home() {
@@ -8,35 +18,43 @@ function Home() {
       label: "Solicitar cotización",
       to: "/contacto",
       variant: "primary",
+      icon: <QuoteIcon />,
     },
     {
       label: "Ver soluciones",
       to: "/soluciones",
       variant: "secondary",
+      icon: <ArrowRightIcon />,
+      iconPosition: "right",
     },
     {
       label: "WhatsApp rápido",
       href: "#",
       variant: "whatsapp",
+      icon: <WhatsAppIcon />,
     },
   ];
 
   const heroHighlights = [
     {
       title: "Garantía de 7 años",
-      description: "Respaldo estructural certificado",
+      description: "Respaldo estructural",
+      icon: <ShieldIcon />,
     },
     {
-      title: "Fabricación in situ",
-      description: "Perfilado continuo sin uniones",
+      title: "Fabricación a medida",
+      description: "Soluciones para cada proyecto",
+      icon: <MeasureIcon />,
     },
     {
       title: "Cobertura nacional",
-      description: "Logística directa desde Querétaro",
+      description: "Atención en todo México",
+      icon: <GlobeIcon />,
     },
     {
       title: "Fijación oculta",
-      description: "Estética limpia y sin filtraciones",
+      description: "Acabado limpio y funcional",
+      icon: <HiddenFixingIcon />,
     },
   ];
 
@@ -50,8 +68,6 @@ function Home() {
         actions={heroActions}
         highlights={heroHighlights}
       />
-
-      {/* Próxima sección */}
     </>
   );
 }
