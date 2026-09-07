@@ -1,0 +1,145 @@
+.cta-section {
+  padding-block: var(--space-3xl);
+
+  background: var(--color-background);
+}
+
+.cta-section__panel {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.4fr)
+    minmax(280px, 0.6fr);
+
+  align-items: center;
+
+  gap: var(--space-3xl);
+
+  padding:
+    var(--space-2xl)
+    var(--space-3xl);
+
+  color: var(--color-white);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgb(122 10 120 / 0.95),
+      rgb(23 28 34 / 0.98) 58%,
+      rgb(18 48 34 / 0.94)
+    );
+
+  border-radius: var(--radius-xl);
+
+  box-shadow: var(--shadow-lg);
+}
+
+.cta-section__content {
+  max-width: 720px;
+}
+
+.cta-section__eyebrow {
+  display: inline-block;
+
+  margin-bottom: var(--space-sm);
+
+  color: rgb(255 255 255 / 0.78);
+
+  font-size: 0.7rem;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.cta-section__title {
+  margin-bottom: var(--space-md);
+
+  color: var(--color-white);
+
+  font-size: clamp(
+    2rem,
+    4vw,
+    3.25rem
+  );
+
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.cta-section__description {
+  max-width: 650px;
+
+  color: rgb(255 255 255 / 0.74);
+
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.cta-section__actions {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-sm);
+}
+
+.cta-section__actions .button {
+  width: 100%;
+}
+
+/* Variante más sobria si después la necesitamos */
+
+.cta-section--light .cta-section__panel {
+  color: var(--color-text);
+
+  background: var(--color-background-alt);
+
+  border: 1px solid var(--color-border);
+  box-shadow: none;
+}
+
+.cta-section--light .cta-section__title {
+  color: var(--color-text);
+}
+
+.cta-section--light .cta-section__description {
+  color: var(--color-text-secondary);
+}
+
+.cta-section--light .cta-section__eyebrow {
+  color: var(--color-primary);
+}
+
+@media (max-width: 900px) {
+  .cta-section__panel {
+    grid-template-columns: 1fr;
+
+    gap: var(--space-2xl);
+  }
+
+  .cta-section__actions {
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cta-section {
+    padding-block: var(--space-2xl);
+  }
+
+  .cta-section__panel {
+    padding: var(--space-xl);
+  }
+
+  .cta-section__title {
+    font-size: clamp(
+      2rem,
+      10vw,
+      2.75rem
+    );
+  }
+
+  .cta-section__actions {
+    max-width: none;
+  }
+}
