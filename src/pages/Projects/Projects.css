@@ -110,3 +110,260 @@
     min-height: auto;
   }
 }
+
+/* =========================================
+   PROJECTS PHILOSOPHY
+========================================= */
+
+.projects-philosophy {
+  background: var(--color-background);
+}
+
+.projects-philosophy__container {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.1fr)
+    minmax(360px, 0.9fr);
+
+  align-items: start;
+
+  gap: clamp(
+    var(--space-2xl),
+    5vw,
+    var(--space-4xl)
+  );
+}
+
+.projects-philosophy__content {
+  max-width: 720px;
+}
+
+.projects-philosophy__eyebrow {
+  display: block;
+
+  margin-bottom: var(--space-sm);
+
+  color: var(--color-primary);
+
+  font-size: 0.72rem;
+  font-weight: 700;
+
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.projects-philosophy__title {
+  max-width: 680px;
+
+  margin-bottom: var(--space-lg);
+
+  font-size: clamp(
+    2rem,
+    4vw,
+    3.3rem
+  );
+
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+}
+
+.projects-philosophy__description {
+  max-width: 650px;
+
+  margin-bottom: var(--space-xl);
+
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+/* Statement */
+
+.projects-philosophy__statement {
+  margin-bottom: var(--space-xl);
+  padding: var(--space-lg);
+
+  background: var(--color-background-alt);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.projects-philosophy__statement strong {
+  display: block;
+
+  margin-bottom: var(--space-sm);
+
+  color: var(--color-text);
+
+  font-size: 0.92rem;
+}
+
+.projects-philosophy__statement p {
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+/* Technical block */
+
+.projects-philosophy__technical {
+  padding: var(--space-lg);
+
+  color: var(--color-white);
+  background: var(--color-surface-dark);
+
+  border-radius: var(--radius-lg);
+}
+
+.projects-philosophy__technical-label {
+  display: block;
+
+  margin-bottom: var(--space-lg);
+
+  color: var(--color-secondary);
+
+  font-size: 0.68rem;
+  font-weight: 700;
+
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.projects-philosophy__technical-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: var(--space-md);
+}
+
+.projects-philosophy__technical-grid div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.25rem;
+}
+
+.projects-philosophy__technical-grid strong {
+  color: var(--color-secondary);
+
+  font-size: 0.85rem;
+}
+
+.projects-philosophy__technical-grid span {
+  color: rgb(255 255 255 / 0.72);
+
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
+/* Cards */
+
+.projects-philosophy__cards {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: var(--space-lg);
+}
+
+.projects-philosophy-card {
+  min-height: 190px;
+
+  padding: var(--space-xl);
+
+  background: var(--color-white);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  transition:
+    transform var(--transition-normal),
+    box-shadow var(--transition-normal);
+}
+
+.projects-philosophy-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow: var(--shadow-sm);
+}
+
+.projects-philosophy-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  margin-bottom: var(--space-lg);
+
+  border-radius: var(--radius-md);
+}
+
+.projects-philosophy-card__icon--primary {
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
+.projects-philosophy-card__icon--success {
+  color: var(--color-secondary-dark);
+  background: var(--color-secondary-light);
+}
+
+.projects-philosophy-card__icon--dark {
+  color: var(--color-white);
+  background: var(--color-surface-dark);
+}
+
+.projects-philosophy-card h3 {
+  margin-bottom: var(--space-sm);
+
+  font-size: 1rem;
+}
+
+.projects-philosophy-card p {
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .projects-philosophy__container {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-philosophy__content {
+    max-width: none;
+  }
+
+  .projects-philosophy__cards {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .projects-philosophy__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-philosophy-card {
+    min-height: auto;
+
+    padding: var(--space-lg);
+  }
+
+  .projects-philosophy__technical-grid {
+    grid-template-columns: 1fr;
+  }
+}
