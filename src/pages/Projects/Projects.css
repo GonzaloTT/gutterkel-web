@@ -367,3 +367,121 @@
     grid-template-columns: 1fr;
   }
 }
+
+.projects-gallery {
+  background: var(--color-background-alt);
+}
+
+.projects-gallery__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: var(--space-2xl);
+
+  margin-bottom: var(--space-2xl);
+}
+
+.projects-gallery__header > div:first-child {
+  max-width: 650px;
+}
+
+.projects-gallery__eyebrow {
+  display: block;
+
+  margin-bottom: var(--space-sm);
+
+  color: var(--color-secondary-dark);
+
+  font-size: 0.72rem;
+  font-weight: 700;
+
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.projects-gallery__title {
+  margin-bottom: var(--space-sm);
+}
+
+.projects-gallery__description {
+  max-width: 580px;
+}
+
+.projects-gallery__filters {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: var(--space-xs);
+}
+
+.projects-gallery__filter {
+  padding:
+    0.45rem
+    0.75rem;
+
+  color: var(--color-text-secondary);
+  background: var(--color-white);
+
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+
+  cursor: pointer;
+
+  transition:
+    color var(--transition-fast),
+    background var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.projects-gallery__filter:hover,
+.projects-gallery__filter--active {
+  color: var(--color-white);
+  background: var(--color-primary);
+
+  border-color: var(--color-primary);
+}
+
+.projects-gallery__grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: var(--space-lg);
+}
+
+@media (max-width: 1000px) {
+  .projects-gallery__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .projects-gallery__grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-gallery__filters {
+    width: 100%;
+
+    overflow-x: auto;
+
+    flex-wrap: nowrap;
+
+    padding-bottom: var(--space-xs);
+  }
+
+  .projects-gallery__filter {
+    flex-shrink: 0;
+  }
+
+  .projects-gallery__grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,4 +1,7 @@
 import Hero from "../../components/Hero/Hero";
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
+
+import projects from "../../data/projects";
 
 import {
   LinkIcon,
@@ -176,6 +179,58 @@ function Projects() {
                 arquitectónicas de distintos tipos.
               </p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="projects-gallery section">
+        <div className="container">
+          <div className="projects-gallery__header">
+            <div>
+              <span className="projects-gallery__eyebrow">
+                Portafolio de ejecución
+              </span>
+
+              <h2 className="projects-gallery__title">
+                Obras realizadas
+              </h2>
+
+              <p className="projects-gallery__description">
+                Una selección visual de proyectos y aplicaciones desarrolladas
+                con distintas soluciones arquitectónicas.
+              </p>
+            </div>
+
+            <div className="projects-gallery__filters">
+              <button type="button" className="projects-gallery__filter projects-gallery__filter--active">
+                Todos
+              </button>
+
+              <button type="button" className="projects-gallery__filter">
+                Residencial
+              </button>
+
+              <button type="button" className="projects-gallery__filter">
+                Comercial
+              </button>
+
+              <button type="button" className="projects-gallery__filter">
+                Industrial
+              </button>
+
+              <button type="button" className="projects-gallery__filter">
+                Fachadas
+              </button>
+            </div>
+          </div>
+
+          <div className="projects-gallery__grid">
+            {projects.map((project) => (
+              <ProjectCard
+                key={project.id}
+                {...project}
+              />
+            ))}
           </div>
         </div>
       </section>
