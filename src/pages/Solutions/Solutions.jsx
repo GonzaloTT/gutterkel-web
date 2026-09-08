@@ -1,5 +1,6 @@
 import Hero from "../../components/Hero/Hero";
 import SolutionSection from "../../components/SolutionSection/SolutionSection";
+import CTASection from "../../components/CTASection/CTASection";
 
 import {
   ArchitectureIcon,
@@ -8,6 +9,8 @@ import {
   RoofIcon,
   CheckCircleIcon,
   QuoteIcon,
+  PhoneIcon,
+  WhatsAppIcon,
 } from "../../components/Icons/Icons";
 
 import "./Solutions.css";
@@ -33,6 +36,27 @@ function Solutions() {
       id: "fachadas",
       label: "Fachadas ventiladas",
       icon: <BuildingIcon />,
+    },
+  ];
+
+  const solutionsCtaActions = [
+    {
+      label: "Solicitar cotización",
+      to: "/contacto",
+      variant: "primary",
+      icon: <QuoteIcon />,
+    },
+    {
+      label: "Contactar por WhatsApp",
+      href: "#",
+      variant: "whatsapp",
+      icon: <WhatsAppIcon />,
+    },
+    {
+      label: "Llamar ahora",
+      href: "tel:+524423209124",
+      variant: "secondary",
+      icon: <PhoneIcon />,
     },
   ];
 
@@ -252,6 +276,13 @@ function Solutions() {
           variant: "primary",
           icon: <QuoteIcon />,
         }}
+      />
+
+      <CTASection
+        eyebrow="Atención personalizada"
+        title="¿Tienes un proyecto en mente?"
+        description="Cuéntanos qué necesitas y te ayudaremos a identificar la solución más adecuada para tu proyecto. Nuestro equipo podrá orientarte sobre las opciones disponibles y el siguiente paso para solicitar una cotización."
+        actions={solutionsCtaActions}
       />
     </>
   );
