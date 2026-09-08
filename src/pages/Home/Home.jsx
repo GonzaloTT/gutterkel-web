@@ -1,24 +1,25 @@
 import { Link } from "react-router-dom";
 
-import Hero from "../../components/Hero/Hero";
-import SolutionCard from "../../components/SolutionCard/SolutionCard";
-import solutions from "../../data/solutions";
-import ProcessStep from "../../components/ProcessStep/ProcessStep";
 import CTASection from "../../components/CTASection/CTASection";
+import Hero from "../../components/Hero/Hero";
+import NumberedCard from "../../components/NumberedCard/NumberedCard";
+import SolutionCard from "../../components/SolutionCard/SolutionCard";
+
+import solutions from "../../data/solutions";
 
 import {
   ArrowRightIcon,
+  CheckCircleIcon,
   GlobeIcon,
   HiddenFixingIcon,
+  LightningIcon,
   MeasureIcon,
+  PhoneIcon,
   QuoteIcon,
   ShieldIcon,
-  WhatsAppIcon,
-  CheckCircleIcon,
-  LightningIcon,
   ToolsIcon,
   TuneIcon,
-  PhoneIcon
+  WhatsAppIcon,
 } from "../../components/Icons/Icons";
 
 import "./Home.css";
@@ -311,7 +312,7 @@ function Home() {
 
           <div className="home-process__grid">
             {processSteps.map((step) => (
-              <ProcessStep
+              <NumberedCard
                 key={step.number}
                 {...step}
               />

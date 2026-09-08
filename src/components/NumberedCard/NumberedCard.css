@@ -1,4 +1,4 @@
-.process-step {
+.numbered-card {
   position: relative;
 
   display: flex;
@@ -19,7 +19,7 @@
     border-color var(--transition-normal);
 }
 
-.process-step:hover {
+.numbered-card:hover {
   transform: translateY(-4px);
 
   border-color: rgb(122 10 120 / 0.16);
@@ -27,7 +27,7 @@
   box-shadow: var(--shadow-md);
 }
 
-.process-step__number {
+.numbered-card__number {
   display: block;
 
   margin-bottom: var(--space-md);
@@ -40,7 +40,7 @@
   line-height: 1;
 }
 
-.process-step__title {
+.numbered-card__title {
   margin-bottom: var(--space-sm);
 
   color: var(--color-text);
@@ -51,7 +51,7 @@
   line-height: 1.3;
 }
 
-.process-step__description {
+.numbered-card__description {
   margin-bottom: var(--space-lg);
 
   color: var(--color-text-secondary);
@@ -60,7 +60,7 @@
   line-height: 1.55;
 }
 
-.process-step__meta {
+.numbered-card__meta {
   display: inline-flex;
   align-items: center;
 
@@ -74,7 +74,7 @@
   font-weight: 700;
 }
 
-.process-step__meta-icon {
+.numbered-card__meta-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -82,32 +82,32 @@
   flex-shrink: 0;
 }
 
-.process-step__meta--primary {
+.numbered-card__meta--primary {
   color: var(--color-primary);
 }
 
-.process-step__meta--success {
+.numbered-card__meta--success {
   color: var(--color-secondary);
 }
 
-.process-step__meta--dark {
+.numbered-card__meta--dark {
   color: var(--color-text);
 }
 
 @media (max-width: 900px) {
-  .process-step {
+  .numbered-card {
     min-height: 240px;
   }
 }
 
 @media (max-width: 600px) {
-  .process-step {
+  .numbered-card {
     min-height: auto;
 
     padding: var(--space-lg);
   }
 
-  .process-step__number {
+  .numbered-card__number {
     font-size: 3rem;
   }
 }

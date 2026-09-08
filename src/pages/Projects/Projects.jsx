@@ -1,19 +1,62 @@
 import Hero from "../../components/Hero/Hero";
+import NumberedCard from "../../components/NumberedCard/NumberedCard";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
 import projects from "../../data/projects";
 
 import {
+  ArchitectureIcon,
+  GlobeIcon,
   LinkIcon,
   LocationIcon,
   MeasureIcon,
   ShieldIcon,
+  ToolsIcon,
   UsersIcon,
 } from "../../components/Icons/Icons";
 
 import "./Projects.css";
 
 function Projects() {
+  const trustReasons = [
+    {
+      number: "01",
+      title: "Soluciones especializadas",
+      description:
+        "Integramos sistemas diseñados para responder a necesidades arquitectónicas y técnicas específicas.",
+      meta: "Experiencia técnica",
+      icon: <ToolsIcon />,
+      tone: "primary",
+    },
+    {
+      number: "02",
+      title: "Atención técnica",
+      description:
+        "Acompañamos cada proyecto con orientación especializada desde la evaluación hasta la instalación.",
+      meta: "Acompañamiento profesional",
+      icon: <UsersIcon />,
+      tone: "success",
+    },
+    {
+      number: "03",
+      title: "Integración arquitectónica",
+      description:
+        "Buscamos que cada solución funcione correctamente sin comprometer la estética del proyecto.",
+      meta: "Diseño y funcionalidad",
+      icon: <ArchitectureIcon />,
+      tone: "dark",
+    },
+    {
+      number: "04",
+      title: "Cobertura de proyectos",
+      description:
+        "Atendemos proyectos residenciales, comerciales e industriales según sus necesidades específicas.",
+      meta: "Atención nacional",
+      icon: <GlobeIcon />,
+      tone: "success",
+    },
+  ];
+
   return (
     <>
       <Hero
@@ -125,9 +168,7 @@ function Projects() {
                 <LocationIcon />
               </span>
 
-              <h3>
-                Operación desde Querétaro
-              </h3>
+              <h3>Operación desde Querétaro</h3>
 
               <p>
                 Coordinamos proyectos y atención técnica desde nuestra
@@ -140,9 +181,7 @@ function Projects() {
                 <ShieldIcon />
               </span>
 
-              <h3>
-                Atención especializada
-              </h3>
+              <h3>Atención especializada</h3>
 
               <p>
                 Cada proyecto se analiza de acuerdo con sus necesidades
@@ -155,9 +194,7 @@ function Projects() {
                 <LinkIcon />
               </span>
 
-              <h3>
-                Soluciones integradas
-              </h3>
+              <h3>Soluciones integradas</h3>
 
               <p>
                 Buscamos que cada sistema se integre correctamente a la
@@ -170,9 +207,7 @@ function Projects() {
                 <UsersIcon />
               </span>
 
-              <h3>
-                Proyectos diversos
-              </h3>
+              <h3>Proyectos diversos</h3>
 
               <p>
                 Trabajamos con necesidades residenciales, comerciales y
@@ -202,23 +237,38 @@ function Projects() {
             </div>
 
             <div className="projects-gallery__filters">
-              <button type="button" className="projects-gallery__filter projects-gallery__filter--active">
+              <button
+                type="button"
+                className="projects-gallery__filter projects-gallery__filter--active"
+              >
                 Todos
               </button>
 
-              <button type="button" className="projects-gallery__filter">
+              <button
+                type="button"
+                className="projects-gallery__filter"
+              >
                 Residencial
               </button>
 
-              <button type="button" className="projects-gallery__filter">
+              <button
+                type="button"
+                className="projects-gallery__filter"
+              >
                 Comercial
               </button>
 
-              <button type="button" className="projects-gallery__filter">
+              <button
+                type="button"
+                className="projects-gallery__filter"
+              >
                 Industrial
               </button>
 
-              <button type="button" className="projects-gallery__filter">
+              <button
+                type="button"
+                className="projects-gallery__filter"
+              >
                 Fachadas
               </button>
             </div>
@@ -229,6 +279,35 @@ function Projects() {
               <ProjectCard
                 key={project.id}
                 {...project}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="projects-trust section">
+        <div className="container">
+          <div className="projects-trust__header">
+            <span className="projects-trust__eyebrow">
+              Diferenciadores constructivos
+            </span>
+
+            <h2 className="projects-trust__title">
+              Por qué elegir Gutterkel México
+            </h2>
+
+            <p className="projects-trust__description">
+              Combinamos soluciones técnicas, atención especializada e
+              integración arquitectónica para responder a las necesidades de
+              cada proyecto.
+            </p>
+          </div>
+
+          <div className="projects-trust__grid">
+            {trustReasons.map((reason) => (
+              <NumberedCard
+                key={reason.number}
+                {...reason}
               />
             ))}
           </div>
