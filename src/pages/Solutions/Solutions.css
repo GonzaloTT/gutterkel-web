@@ -1,0 +1,117 @@
+/* =========================================
+   SOLUTIONS NAVIGATION
+========================================= */
+
+.solutions-nav {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  width: 100%;
+
+  margin-top: var(--space-2xl);
+
+  overflow: hidden;
+
+  background: var(--color-background-alt);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.solutions-nav__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.45rem;
+
+  min-height: 54px;
+
+  padding:
+    var(--space-sm)
+    var(--space-md);
+
+  color: var(--color-text);
+
+  font-size: 0.8rem;
+  font-weight: 700;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  transition:
+    color var(--transition-fast),
+    background var(--transition-fast);
+}
+
+.solutions-nav__link:not(:last-child) {
+  border-right: 1px solid var(--color-border);
+}
+
+.solutions-nav__link:hover {
+  color: var(--color-primary);
+
+  background: var(--color-primary-light);
+}
+
+.solutions-nav__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: var(--color-primary);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .solutions-nav {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .solutions-nav__link {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .solutions-nav__link:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .solutions-nav__link:nth-last-child(-n + 2) {
+    border-bottom: 0;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .solutions-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .solutions-nav__link {
+    justify-content: flex-start;
+
+    text-align: left;
+
+    border-right: 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .solutions-nav__link:nth-last-child(-n + 2) {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .solutions-nav__link:last-child {
+    border-bottom: 0;
+  }
+}
