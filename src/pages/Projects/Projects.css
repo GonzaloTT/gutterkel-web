@@ -1,0 +1,112 @@
+/* =========================================
+   PROJECTS HERO STATS
+========================================= */
+
+.projects-hero__stats {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: var(--space-md);
+
+  max-width: 760px;
+
+  margin-top: var(--space-2xl);
+}
+
+.projects-hero-stat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: var(--space-lg);
+
+  min-height: 120px;
+
+  padding: var(--space-lg);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.projects-hero-stat--primary {
+  background: var(--color-primary-light);
+}
+
+.projects-hero-stat--success {
+  background: var(--color-secondary-light);
+}
+
+.projects-hero-stat__content {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+}
+
+.projects-hero-stat__label {
+  margin-bottom: var(--space-xs);
+
+  color: var(--color-text-muted);
+
+  font-size: 0.7rem;
+  font-weight: 700;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.projects-hero-stat__value {
+  margin-bottom: 0.2rem;
+
+  color: var(--color-primary);
+
+  font-size: 1.1rem;
+  font-weight: 800;
+
+  line-height: 1.2;
+}
+
+.projects-hero-stat--success
+  .projects-hero-stat__value {
+  color: var(--color-secondary-dark);
+}
+
+.projects-hero-stat__description {
+  color: var(--color-text-secondary);
+
+  font-size: 0.76rem;
+}
+
+.projects-hero-stat__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  width: 44px;
+  height: 44px;
+
+  color: var(--color-primary);
+
+  background: rgb(255 255 255 / 0.62);
+
+  border-radius: var(--radius-md);
+}
+
+.projects-hero-stat--success
+  .projects-hero-stat__icon {
+  color: var(--color-secondary-dark);
+}
+
+@media (max-width: 700px) {
+  .projects-hero__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-hero-stat {
+    min-height: auto;
+  }
+}
