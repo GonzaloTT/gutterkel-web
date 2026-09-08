@@ -1,10 +1,13 @@
 import Hero from "../../components/Hero/Hero";
+import SolutionSection from "../../components/SolutionSection/SolutionSection";
 
 import {
   ArchitectureIcon,
   BuildingIcon,
   DropletIcon,
   RoofIcon,
+  CheckCircleIcon,
+  QuoteIcon,
 } from "../../components/Icons/Icons";
 
 import "./Solutions.css";
@@ -63,7 +66,52 @@ function Solutions() {
         </nav>
       </Hero>
 
-      {/* Próxima etapa: SolutionSection */}
+      <SolutionSection
+        id="canalones"
+        eyebrow="Solución 01 · Evacuación pluvial"
+        title="Sistemas de Canalón Continuo de Aluminio"
+        description="Sistema de canalización pluvial fabricado a medida para adaptarse a las características de cada proyecto, ofreciendo una integración limpia y funcional con la arquitectura."
+        image={null}
+        imagePosition="left"
+        features={[
+          {
+            title: "Fabricación a medida",
+            description:
+              "El sistema se adapta a las dimensiones requeridas por cada proyecto.",
+            icon: <CheckCircleIcon />,
+          },
+          {
+            title: "Diseño continuo",
+            description:
+              "Configuración orientada a reducir uniones visibles y mejorar el acabado.",
+            icon: <CheckCircleIcon />,
+          },
+          {
+            title: "Integración arquitectónica",
+            description:
+              "Diseñado para incorporarse de manera discreta a la estructura del inmueble.",
+            icon: <CheckCircleIcon />,
+          },
+          {
+            title: "Aplicaciones diversas",
+            description:
+              "Adecuado para distintos tipos de proyectos residenciales y comerciales.",
+            icon: <CheckCircleIcon />,
+          },
+        ]}
+        tags={[
+          "Residencial",
+          "Comercial",
+          "Industrial",
+          "Proyectos arquitectónicos",
+        ]}
+        action={{
+          label: "Cotizar canalón continuo",
+          to: "/contacto",
+          variant: "primary",
+          icon: <QuoteIcon />,
+        }}
+      />
     </>
   );
 }
