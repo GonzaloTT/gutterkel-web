@@ -1,6 +1,7 @@
 import Hero from "../../components/Hero/Hero";
 import NumberedCard from "../../components/NumberedCard/NumberedCard";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import CTASection from "../../components/CTASection/CTASection";
 
 import projects from "../../data/projects";
 
@@ -10,9 +11,12 @@ import {
   LinkIcon,
   LocationIcon,
   MeasureIcon,
+  PhoneIcon,
+  QuoteIcon,
   ShieldIcon,
   ToolsIcon,
   UsersIcon,
+  WhatsAppIcon,
 } from "../../components/Icons/Icons";
 
 import "./Projects.css";
@@ -54,6 +58,27 @@ function Projects() {
       meta: "Atención nacional",
       icon: <GlobeIcon />,
       tone: "success",
+    },
+  ];
+
+  const projectsCtaActions = [
+    {
+      label: "Solicitar cotización",
+      to: "/contacto",
+      variant: "primary",
+      icon: <QuoteIcon />,
+    },
+    {
+      label: "Contactar por WhatsApp",
+      href: "#",
+      variant: "whatsapp",
+      icon: <WhatsAppIcon />,
+    },
+    {
+      label: "Llamar ahora",
+      href: "tel:+524423209124",
+      variant: "secondary",
+      icon: <PhoneIcon />,
     },
   ];
 
@@ -313,6 +338,13 @@ function Projects() {
           </div>
         </div>
       </section>
+
+      <CTASection
+        eyebrow="Atención personalizada"
+        title="¿Tienes un proyecto en mente?"
+        description="Cuéntanos qué necesitas y te ayudaremos a encontrar la solución más adecuada para tu proyecto. Nuestro equipo puede orientarte desde la evaluación inicial hasta la implementación."
+        actions={projectsCtaActions}
+      />
     </>
   );
 }
