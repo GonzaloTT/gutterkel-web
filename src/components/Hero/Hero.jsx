@@ -77,9 +77,13 @@ function Hero({
               ))}
             </div>
           )}
-
-          {children}
         </div>
+
+        {children && (
+          <div className="hero__extra">
+            {children}
+          </div>
+        )}
 
         {highlights.length > 0 && (
           <div className="hero__highlights">
