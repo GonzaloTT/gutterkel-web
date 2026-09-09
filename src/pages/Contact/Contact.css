@@ -1,0 +1,123 @@
+/* =========================================
+   CONTACT HERO
+========================================= */
+
+.contact-hero__message {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-md);
+
+  max-width: 520px;
+}
+
+.contact-hero__message p {
+  color: var(--color-text-secondary);
+
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.contact-hero__message span {
+  color: var(--color-secondary-dark);
+
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   CONTACT MAIN
+========================================= */
+
+.contact-main {
+  background: var(--color-background-alt);
+}
+
+.contact-main__grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.3fr)
+    minmax(320px, 0.7fr);
+
+  align-items: start;
+
+  gap: var(--space-2xl);
+}
+
+.contact-main__form,
+.contact-main__sidebar {
+  min-width: 0;
+}
+
+
+/* =========================================
+   TEMPORARY PLACEHOLDERS
+========================================= */
+
+.contact-main__placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  min-height: 420px;
+
+  padding: var(--space-2xl);
+
+  background: var(--color-white);
+
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.contact-main__sidebar
+  .contact-main__placeholder {
+  min-height: 280px;
+}
+
+.contact-main__placeholder span {
+  margin-bottom: var(--space-sm);
+
+  color: var(--color-primary);
+
+  font-size: 0.8rem;
+  font-weight: 700;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.contact-main__placeholder p {
+  color: var(--color-text-secondary);
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .contact-main__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .contact-hero__message p {
+    font-size: 1rem;
+  }
+
+  .contact-main__placeholder {
+    min-height: auto;
+
+    padding: var(--space-lg);
+  }
+}
