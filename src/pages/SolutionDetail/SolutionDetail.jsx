@@ -1,7 +1,18 @@
 import { Link, useParams } from "react-router-dom";
 
+import CTASection from "../../components/CTASection/CTASection";
 import Hero from "../../components/Hero/Hero";
+import SolutionAdvantages from "../../components/SolutionAdvantages/SolutionAdvantages";
+import SolutionFeatures from "../../components/SolutionFeatures/SolutionFeatures";
+import SolutionIntro from "../../components/SolutionIntro/SolutionIntro";
+
 import solutionDetails from "../../data/solutionDetails";
+
+import {
+  PhoneIcon,
+  QuoteIcon,
+  WhatsAppIcon,
+} from "../../components/Icons/Icons";
 
 import "./SolutionDetail.css";
 
@@ -27,13 +38,37 @@ function SolutionDetail() {
             información que necesitas.
           </p>
 
-          <Link to="/soluciones">
+          <Link
+            to="/soluciones"
+            className="solution-detail-error__link"
+          >
             Volver a soluciones
           </Link>
         </div>
       </main>
     );
   }
+
+  const solutionCtaActions = [
+    {
+      label: "Solicitar cotización",
+      to: "/contacto",
+      variant: "primary",
+      icon: <QuoteIcon />,
+    },
+    {
+      label: "Contactar por WhatsApp",
+      href: "#",
+      variant: "whatsapp",
+      icon: <WhatsAppIcon />,
+    },
+    {
+      label: "Llamar ahora",
+      href: "tel:+524423209124",
+      variant: "secondary",
+      icon: <PhoneIcon />,
+    },
+  ];
 
   return (
     <>
@@ -44,13 +79,35 @@ function SolutionDetail() {
         description={solution.description}
       />
 
-      <section className="solution-detail-placeholder section">
-        <div className="container">
-          <span>
-            Contenido técnico de la solución pendiente
-          </span>
-        </div>
-      </section>
+      {solution.intro && (
+        <SolutionIntro
+          {...solution.intro}
+          imageAlt={solution.title}
+        />
+      )}
+
+      {solution.features && (
+        <SolutionFeatures
+          title="Características principales"
+          description="Aspectos que definen el funcionamiento y la aplicación de esta solución."
+          items={solution.features}
+        />
+      )}
+
+      {solution.advantages && (
+        <SolutionAdvantages
+          title="Ventajas únicas"
+          description="Beneficios que aporta esta solución dentro de distintos tipos de proyecto."
+          items={solution.advantages}
+        />
+      )}
+
+      <CTASection
+        eyebrow="Atención personalizada"
+        title="¿Esta solución se adapta a tu proyecto?"
+        description="Cuéntanos las características de tu obra y nuestro equipo podrá orientarte sobre la mejor forma de integrar esta solución."
+        actions={solutionCtaActions}
+      />
     </>
   );
 }

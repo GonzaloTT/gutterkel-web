@@ -1,12 +1,77 @@
 const solutionDetails = {
   "canalon-continuo": {
     slug: "canalon-continuo",
+
     category: "Evacuación pluvial",
+
     title: "Sistemas de Canalón Continuo de Aluminio",
+
     description:
-      "Sistema de canalización pluvial fabricado a medida para adaptarse a las necesidades de cada proyecto.",
+        "Sistema de canalización pluvial fabricado a medida para adaptarse a las características de cada proyecto y ofrecer una integración limpia, funcional y duradera.",
+
     heroImage: null,
-  },
+
+    intro: {
+        eyebrow: "¿Qué es esta solución?",
+        title:
+        "Canalización pluvial fabricada a medida para cada proyecto",
+        description:
+        "El canalón continuo se fabrica de acuerdo con las dimensiones reales de la obra, permitiendo reducir uniones visibles y adaptar el sistema a las necesidades arquitectónicas de cada construcción.",
+        image: null,
+    },
+
+    features: [
+        {
+        title: "Fabricación a medida",
+        description:
+            "Cada sistema se adapta a las dimensiones y condiciones específicas del proyecto.",
+        },
+        {
+        title: "Diseño continuo",
+        description:
+            "La configuración continua ayuda a reducir uniones visibles y mejorar el acabado final.",
+        },
+        {
+        title: "Integración arquitectónica",
+        description:
+            "Se diseña para integrarse de forma discreta con diferentes tipos de fachadas y cubiertas.",
+        },
+        {
+        title: "Aplicaciones diversas",
+        description:
+            "Puede implementarse en proyectos residenciales, comerciales e industriales.",
+        },
+    ],
+
+    advantages: [
+        {
+        title: "Acabado limpio",
+        description:
+            "El sistema busca mantener una apariencia uniforme y ordenada en la fachada.",
+        },
+        {
+        title: "Adaptación al proyecto",
+        description:
+            "La solución se configura de acuerdo con las necesidades reales de cada obra.",
+        },
+        {
+        title: "Instalación especializada",
+        description:
+            "El montaje se realiza considerando geometría, ubicación y condiciones específicas.",
+        },
+        {
+        title: "Protección pluvial",
+        description:
+            "Ayuda a conducir correctamente el agua y reducir escurrimientos sobre fachadas.",
+        },
+    ],
+
+    specialSections: [
+        "mobile-profiler",
+        "gutter-parts",
+        "fixing-systems",
+    ],
+   },
 
   "cubre-pretil": {
     slug: "cubre-pretil",
