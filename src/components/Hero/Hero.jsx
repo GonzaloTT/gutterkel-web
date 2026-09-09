@@ -20,8 +20,12 @@ function Hero({
     .filter(Boolean)
     .join(" ");
 
+  const supportsBackgroundImage =
+    variant === "home" ||
+    variant === "solution-detail";
+
   const heroStyle =
-    variant === "home" && image
+    supportsBackgroundImage && image
       ? {
           "--hero-background-image": `url("${image}")`,
         }
@@ -32,7 +36,7 @@ function Hero({
       className={heroClasses}
       style={heroStyle}
     >
-      {variant === "home" && !image && (
+      {supportsBackgroundImage && !image && (
         <div
           className="hero__background-placeholder"
           aria-hidden="true"

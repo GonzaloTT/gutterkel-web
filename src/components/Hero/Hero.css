@@ -135,14 +135,6 @@
    BACKGROUND PLACEHOLDER
 ========================================= */
 
-/*
-  Este elemento solo existe mientras todavía
-  no tengamos la imagen real del hero.
-
-  Cuando Hero reciba la prop "image",
-  Hero.jsx deja de renderizarlo.
-*/
-
 .hero__background-placeholder {
   position: absolute;
   z-index: 1;
@@ -177,6 +169,23 @@
 
   border: 1px dashed var(--color-border);
   border-radius: var(--radius-xl);
+}
+
+.hero--solution-detail .hero__background-placeholder {
+  top: var(--space-xl);
+
+  right: max(
+    var(--container-padding),
+    calc(
+      (100vw - var(--container-max-width)) / 2
+    )
+  );
+
+  bottom: var(--space-xl);
+
+  width: min(44vw, 620px);
+
+  opacity: 0.7;
 }
 
 .hero__background-placeholder span {
@@ -279,7 +288,6 @@
 
 /* =========================================
    INTERNAL HERO
-   Solutions / Projects
 ========================================= */
 
 .hero--internal {
@@ -314,6 +322,7 @@
 
   font-size: 1.08rem;
 }
+
 
 /* =========================================
    INTERNAL SPLIT HERO
@@ -358,7 +367,9 @@
 
 .hero--internal-split .hero__description {
   max-width: 680px;
+
   margin-bottom: 0;
+
   font-size: 1.05rem;
 }
 
@@ -373,37 +384,75 @@
   margin-top: 0;
 }
 
-@media (max-width: 900px) {
-  .hero--internal-split .hero__container {
-    grid-template-columns: 1fr;
 
-    gap: var(--space-2xl);
-  }
+/* =========================================
+   SOLUTION DETAIL HERO
+========================================= */
 
-  .hero--internal-split
-    .projects-hero__stats {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
-  }
+.hero--solution-detail {
+  position: relative;
+
+  min-height: 520px;
+
+  padding-block:
+    var(--space-4xl)
+    var(--space-3xl);
+
+  background-color: var(--color-background-alt);
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgb(255 255 255 / 0.98) 0%,
+      rgb(255 255 255 / 0.94) 34%,
+      rgb(255 255 255 / 0.78) 52%,
+      rgb(255 255 255 / 0.34) 72%,
+      rgb(255 255 255 / 0.08) 100%
+    ),
+    var(--hero-background-image);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-@media (max-width: 600px) {
-  .hero--internal-split {
-    padding-block: var(--space-3xl);
-  }
+.hero--solution-detail .hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  .hero--internal-split
-    .projects-hero__stats {
-    grid-template-columns: 1fr;
-  }
+  min-height: 420px;
+}
 
-  .hero--internal-split .hero__title {
-    font-size: clamp(
-      2.25rem,
-      11vw,
-      3.2rem
-    );
-  }
+.hero--solution-detail .hero__content {
+  width: min(100%, 720px);
+}
+
+.hero--solution-detail .hero__title {
+  max-width: 760px;
+
+  margin-bottom: var(--space-lg);
+
+  font-size: clamp(
+    2.7rem,
+    5vw,
+    4.8rem
+  );
+
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+}
+
+.hero--solution-detail .hero__description {
+  max-width: 660px;
+
+  margin-bottom: var(--space-xl);
+
+  font-size: 1.05rem;
+}
+
+.hero--solution-detail .hero__actions {
+  margin-top: var(--space-lg);
 }
 
 
@@ -449,6 +498,18 @@
 ========================================= */
 
 @media (max-width: 900px) {
+  .hero--internal-split .hero__container {
+    grid-template-columns: 1fr;
+
+    gap: var(--space-2xl);
+  }
+
+  .hero--internal-split
+    .projects-hero__stats {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
   .hero--home {
     min-height: auto;
 
@@ -473,16 +534,10 @@
     width: min(100%, 580px);
   }
 
-  /*
-    El placeholder sigue funcionando
-    como parte del fondo visual.
-
-    Nunca baja debajo del contenido.
-  */
-
   .hero__background-placeholder {
     top: var(--space-lg);
     right: var(--container-padding);
+
     bottom: calc(
       var(--space-lg) + 175px
     );
@@ -490,6 +545,41 @@
     width: 46%;
 
     opacity: 0.45;
+  }
+
+  .hero--solution-detail {
+    min-height: auto;
+
+    background-image:
+      linear-gradient(
+        90deg,
+        rgb(255 255 255 / 0.98) 0%,
+        rgb(255 255 255 / 0.9) 52%,
+        rgb(255 255 255 / 0.6) 78%,
+        rgb(255 255 255 / 0.4) 100%
+      ),
+      var(--hero-background-image);
+
+    background-position: center;
+  }
+
+  .hero--solution-detail .hero__container {
+    min-height: 420px;
+  }
+
+  .hero--solution-detail .hero__content {
+    width: min(100%, 620px);
+  }
+
+  .hero--solution-detail
+    .hero__background-placeholder {
+    top: var(--space-lg);
+    right: var(--container-padding);
+    bottom: var(--space-lg);
+
+    width: 46%;
+
+    opacity: 0.3;
   }
 
   .hero__highlights {
@@ -523,12 +613,6 @@
       var(--space-2xl)
       var(--space-xl);
 
-    /*
-      En móvil la imagen sigue siendo background,
-      pero usamos un overlay blanco mucho más fuerte
-      para conservar legibilidad.
-    */
-
     background-image:
       linear-gradient(
         rgb(255 255 255 / 0.88),
@@ -544,6 +628,31 @@
   }
 
   .hero--home .hero__content {
+    width: 100%;
+  }
+
+  .hero--solution-detail {
+    min-height: auto;
+
+    padding-block:
+      var(--space-3xl)
+      var(--space-2xl);
+
+    background-image:
+      linear-gradient(
+        rgb(255 255 255 / 0.9),
+        rgb(255 255 255 / 0.95)
+      ),
+      var(--hero-background-image);
+
+    background-position: 65% center;
+  }
+
+  .hero--solution-detail .hero__container {
+    min-height: auto;
+  }
+
+  .hero--solution-detail .hero__content {
     width: 100%;
   }
 
@@ -565,7 +674,20 @@
     line-height: 1;
   }
 
-  .hero--home .hero__description {
+  .hero--solution-detail .hero__title {
+    max-width: 100%;
+
+    font-size: clamp(
+      2.3rem,
+      11vw,
+      3.4rem
+    );
+
+    line-height: 1;
+  }
+
+  .hero--home .hero__description,
+  .hero--solution-detail .hero__description {
     max-width: 100%;
 
     font-size: 1rem;
@@ -576,13 +698,6 @@
 
     width: 100%;
   }
-
-  /*
-    El placeholder temporal ocupa el Hero
-    como fondo decorativo.
-
-    No se convierte en otra sección.
-  */
 
   .hero__background-placeholder {
     top: 0;
@@ -599,6 +714,20 @@
         #f2f4f5,
         #e6eaed
       );
+
+    border: 0;
+    border-radius: 0;
+  }
+
+  .hero--solution-detail
+    .hero__background-placeholder {
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    opacity: 0.12;
 
     border: 0;
     border-radius: 0;
@@ -650,5 +779,22 @@
 
   .hero--internal .hero__description {
     font-size: 1rem;
+  }
+
+  .hero--internal-split {
+    padding-block: var(--space-3xl);
+  }
+
+  .hero--internal-split
+    .projects-hero__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .hero--internal-split .hero__title {
+    font-size: clamp(
+      2.25rem,
+      11vw,
+      3.2rem
+    );
   }
 }
