@@ -1,5 +1,6 @@
 import Hero from "../../components/Hero/Hero";
 import ContactForm from "../../components/ContactForm/ContactForm";
+import FAQ from "../../components/FAQ/FAQ";
 
 import {
   LocationIcon,
@@ -11,6 +12,39 @@ import {
 import "./Contact.css";
 
 function Contact() {
+  const faqItems = [
+    {
+      question: "¿En qué zonas atienden proyectos?",
+      answer:
+        "Atendemos proyectos en Querétaro y otras regiones de México de acuerdo con las características y necesidades de cada obra.",
+    },
+    {
+      question: "¿Realizan instalaciones fuera de Querétaro?",
+      answer:
+        "Sí. La disponibilidad depende de la ubicación, alcance y características del proyecto. Nuestro equipo puede confirmar la cobertura al revisar tu solicitud.",
+    },
+    {
+      question: "¿Cómo solicito una cotización?",
+      answer:
+        "Puedes enviarnos la información general de tu proyecto mediante el formulario, WhatsApp, teléfono o correo electrónico.",
+    },
+    {
+      question: "¿Qué información necesitan para cotizar?",
+      answer:
+        "Es útil compartir ubicación, tipo de proyecto, solución de interés, dimensiones aproximadas y cualquier información técnica disponible.",
+    },
+    {
+      question: "¿Las soluciones se fabrican a medida?",
+      answer:
+        "Las soluciones pueden adaptarse a las características y dimensiones específicas de cada proyecto según la evaluación técnica correspondiente.",
+    },
+    {
+      question: "¿Puedo solicitar asesoría antes de cotizar?",
+      answer:
+        "Sí. Puedes contactar al equipo para resolver dudas iniciales y conocer qué solución puede adaptarse mejor a tu proyecto.",
+    },
+  ];
+
   return (
     <>
       <Hero
@@ -183,6 +217,13 @@ function Contact() {
           </aside>
         </div>
       </section>
+
+      <FAQ
+        eyebrow="Resolución de dudas"
+        title="Preguntas frecuentes"
+        description="Resolvemos algunas de las dudas más comunes sobre nuestros servicios, procesos de cotización y atención de proyectos."
+        items={faqItems}
+      />
     </>
   );
 }
