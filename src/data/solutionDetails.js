@@ -172,11 +172,73 @@ const solutionDetails = {
 
   "cubre-pretil": {
     slug: "cubre-pretil",
+
     category: "Protección arquitectónica",
+
     title: "Cubre Pretil y Goterón",
+
     description:
-      "Solución diseñada para proteger remates, pretiles y bordes expuestos frente al agua y los escurrimientos.",
+        "Sistema diseñado para proteger remates, pretiles y bordes expuestos frente al agua, los escurrimientos y el deterioro asociado a la humedad.",
+
     heroImage: null,
+
+    intro: {
+        eyebrow: "¿Qué es esta solución?",
+
+        title:
+        "Protección arquitectónica para remates y bordes expuestos",
+
+        description:
+        "El sistema de Cubre Pretil y Goterón se utiliza para proteger zonas superiores y bordes de la construcción, ayudando a controlar el escurrimiento del agua y a reducir el contacto directo de la humedad con elementos arquitectónicos sensibles.",
+
+        image: null,
+    },
+
+    features: [
+        {
+        title: "Protección perimetral",
+        description:
+            "Ayuda a proteger pretiles, remates y bordes superiores frente a la exposición al agua.",
+        },
+        {
+        title: "Control de escurrimientos",
+        description:
+            "Su configuración favorece una conducción más controlada del agua en zonas expuestas.",
+        },
+        {
+        title: "Fabricación adaptable",
+        description:
+            "Puede ajustarse a las dimensiones y geometría requeridas por cada proyecto.",
+        },
+        {
+        title: "Integración arquitectónica",
+        description:
+            "Se incorpora al diseño de la fachada buscando mantener un acabado limpio y funcional.",
+        },
+    ],
+
+    advantages: [
+        {
+        title: "Mayor protección",
+        description:
+            "Ayuda a reducir la exposición directa de remates y bordes a condiciones de humedad.",
+        },
+        {
+        title: "Acabado discreto",
+        description:
+            "Puede integrarse de forma visualmente ordenada con distintos estilos arquitectónicos.",
+        },
+        {
+        title: "Adaptación al proyecto",
+        description:
+            "La solución se configura según las características constructivas específicas de cada obra.",
+        },
+        {
+        title: "Aplicación versátil",
+        description:
+            "Puede utilizarse en distintos tipos de proyectos residenciales, comerciales y arquitectónicos.",
+        },
+    ],
   },
 
   "techos-falsos": {
