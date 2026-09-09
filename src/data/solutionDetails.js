@@ -66,11 +66,108 @@ const solutionDetails = {
         },
     ],
 
-    specialSections: [
-        "mobile-profiler",
-        "gutter-parts",
-        "fixing-systems",
-    ],
+    mobileProfiler: {
+        eyebrow: "Fabricación especializada",
+        title: "Perfiladora móvil",
+        subtitle:
+            "Fabricación directamente adaptada a cada proyecto",
+        description:
+            "La perfiladora móvil permite fabricar el sistema de canalón de acuerdo con las dimensiones necesarias para cada obra, reduciendo procesos adicionales y facilitando una instalación adaptada al proyecto.",
+        image: null,
+    },
+
+    gutterParts: {
+        eyebrow: "Componentes del sistema",
+
+        title: "Partes del canalón",
+
+        description:
+            "El sistema se compone de distintos elementos que permiten conducir y controlar correctamente el agua pluvial de acuerdo con las características de cada instalación.",
+
+        items: [
+            {
+            name: "Perfil",
+            description:
+                "Elemento principal del sistema encargado de recibir y conducir el agua pluvial.",
+            image: null,
+            },
+            {
+            name: "Codo",
+            description:
+                "Pieza diseñada para adaptar la conducción del agua a cambios de dirección.",
+            image: null,
+            },
+            {
+            name: "Nacimiento",
+            description:
+                "Conecta el canalón con el sistema de bajada para dirigir el flujo de agua.",
+            image: null,
+            },
+            {
+            name: "Bajante",
+            description:
+                "Conduce el agua desde el canalón hacia el punto de descarga o recolección.",
+            image: null,
+            },
+            {
+            name: "Tapa",
+            description:
+                "Cierra los extremos del canalón y ayuda a mantener el flujo dentro del sistema.",
+            image: null,
+            },
+        ],
+    },
+
+    fixingSystems: {
+        eyebrow: "Configuraciones de instalación",
+
+        title: "Sistema de fijación",
+
+        description:
+            "El sistema puede adaptarse a diferentes condiciones de fachada y cubierta mediante distintas configuraciones de soporte y montaje.",
+
+        note:
+            "La solución de fijación se selecciona de acuerdo con las características constructivas de cada proyecto.",
+
+        items: [
+            {
+            name: "Fijación sobre cornisa",
+            description:
+                "Configuración pensada para instalaciones sobre bordes o elementos de cornisa.",
+            image: null,
+            },
+            {
+            name: "Gancho pico canalón",
+            description:
+                "Sistema de soporte adaptado a determinadas geometrías de cubierta.",
+            image: null,
+            },
+            {
+            name: "Gancho separador",
+            description:
+                "Permite mantener una separación controlada entre el canalón y el elemento de soporte.",
+            image: null,
+            },
+            {
+            name: "Gancho separador tipo Z",
+            description:
+                "Alternativa de fijación para configuraciones donde se requiere mayor desplazamiento respecto al soporte.",
+            image: null,
+            },
+            {
+            name: "Soporte mural",
+            description:
+                "Configuración diseñada para fijación directa sobre elementos verticales.",
+            image: null,
+            },
+            {
+            name: "Gancho de nieve",
+            description:
+                "Configuración específica para determinados escenarios de cubierta y soporte.",
+            image: null,
+            },
+        ],
+    },
    },
 
   "cubre-pretil": {

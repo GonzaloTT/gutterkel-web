@@ -1,0 +1,157 @@
+/* =========================================
+   MOBILE PROFILER
+========================================= */
+
+.mobile-profiler {
+  background: var(--color-background-alt);
+}
+
+.mobile-profiler__grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.1fr)
+    minmax(0, 0.9fr);
+
+  align-items: center;
+
+  gap: clamp(
+    var(--space-2xl),
+    5vw,
+    var(--space-4xl)
+  );
+}
+
+
+/* =========================================
+   MEDIA
+========================================= */
+
+.mobile-profiler__media {
+  min-width: 0;
+}
+
+.mobile-profiler__image,
+.mobile-profiler__placeholder {
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+
+  border-radius: var(--radius-lg);
+}
+
+.mobile-profiler__image {
+  object-fit: contain;
+}
+
+.mobile-profiler__placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-text-muted);
+
+  background:
+    linear-gradient(
+      135deg,
+      #f4f6f8,
+      #e7ebef
+    );
+
+  border: 1px dashed var(--color-border);
+}
+
+.mobile-profiler__placeholder span {
+  padding: 0.45rem 0.7rem;
+
+  background: rgb(255 255 255 / 0.82);
+
+  font-size: 0.75rem;
+  font-weight: 600;
+
+  border-radius: var(--radius-sm);
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.mobile-profiler__content {
+  max-width: 620px;
+}
+
+.mobile-profiler__eyebrow {
+  display: block;
+
+  margin-bottom: var(--space-sm);
+
+  color: var(--color-primary);
+
+  font-size: 0.72rem;
+  font-weight: 700;
+
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.mobile-profiler__title {
+  margin-bottom: var(--space-sm);
+
+  font-size: clamp(
+    2rem,
+    4vw,
+    3.2rem
+  );
+
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+}
+
+.mobile-profiler__subtitle {
+  margin-bottom: var(--space-lg);
+
+  color: var(--color-secondary-dark);
+
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.mobile-profiler__description {
+  margin-bottom: var(--space-xl);
+
+  color: var(--color-text-secondary);
+
+  line-height: 1.65;
+}
+
+.mobile-profiler__action {
+  display: flex;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .mobile-profiler__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-profiler__content {
+    max-width: none;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .mobile-profiler__action,
+  .mobile-profiler__action .button {
+    width: 100%;
+  }
+}

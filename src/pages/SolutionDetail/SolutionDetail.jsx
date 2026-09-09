@@ -5,6 +5,9 @@ import Hero from "../../components/Hero/Hero";
 import SolutionAdvantages from "../../components/SolutionAdvantages/SolutionAdvantages";
 import SolutionFeatures from "../../components/SolutionFeatures/SolutionFeatures";
 import SolutionIntro from "../../components/SolutionIntro/SolutionIntro";
+import MobileProfiler from "../../components/MobileProfiler/MobileProfiler";
+import GutterParts from "../../components/GutterParts/GutterParts";
+import FixingSystems from "../../components/FixingSystems/FixingSystems";
 
 import solutionDetails from "../../data/solutionDetails";
 
@@ -73,10 +76,11 @@ function SolutionDetail() {
   return (
     <>
       <Hero
-        variant="internal"
+        variant="solution-detail"
         eyebrow={solution.category}
         title={solution.title}
         description={solution.description}
+        image={solution.heroImage}
       />
 
       {solution.intro && (
@@ -99,6 +103,24 @@ function SolutionDetail() {
           title="Ventajas únicas"
           description="Beneficios que aporta esta solución dentro de distintos tipos de proyecto."
           items={solution.advantages}
+        />
+      )}
+
+      {solution.mobileProfiler && (
+        <MobileProfiler
+            {...solution.mobileProfiler}
+        />
+      )}
+
+      {solution.gutterParts && (
+        <GutterParts
+            {...solution.gutterParts}
+        />
+      )}
+
+      {solution.fixingSystems && (
+        <FixingSystems
+            {...solution.fixingSystems}
         />
       )}
 
