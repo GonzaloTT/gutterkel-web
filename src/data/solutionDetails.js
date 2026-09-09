@@ -243,11 +243,73 @@ const solutionDetails = {
 
   "techos-falsos": {
     slug: "techos-falsos",
-    category: "Acabados arquitectónicos",
-    title: "Techos Falsos y Plafones Metálicos",
+
+    category: "Soluciones interiores",
+
+    title: "Techos Falsos y Plafones",
+
     description:
-      "Sistemas arquitectónicos para interiores y áreas cubiertas que combinan funcionalidad, diseño e integración técnica.",
+        "Solución arquitectónica para crear acabados interiores limpios y funcionales, permitiendo ocultar instalaciones y mejorar la integración visual de distintos espacios.",
+
     heroImage: null,
+
+    intro: {
+        eyebrow: "¿Qué es esta solución?",
+
+        title:
+        "Una solución funcional para integrar y ordenar espacios interiores",
+
+        description:
+        "Los techos falsos y plafones permiten crear una superficie secundaria debajo de la estructura principal del techo. Esto facilita la integración visual de instalaciones, luminarias y otros elementos técnicos, al mismo tiempo que contribuye a mantener un acabado interior más uniforme y ordenado.",
+
+        image: null,
+    },
+
+    features: [
+        {
+        title: "Integración de instalaciones",
+        description:
+            "Permite ocultar o integrar visualmente cableado, luminarias, ductos y otros elementos técnicos.",
+        },
+        {
+        title: "Acabado uniforme",
+        description:
+            "Ayuda a crear superficies interiores más limpias, continuas y visualmente ordenadas.",
+        },
+        {
+        title: "Diseño adaptable",
+        description:
+            "Puede configurarse de acuerdo con las dimensiones, geometría y necesidades estéticas del espacio.",
+        },
+        {
+        title: "Aplicación arquitectónica",
+        description:
+            "Puede utilizarse en distintos entornos residenciales, comerciales, corporativos e institucionales.",
+        },
+    ],
+
+    advantages: [
+        {
+        title: "Mejor integración visual",
+        description:
+            "Ayuda a reducir la presencia visual de instalaciones y elementos técnicos dentro del espacio.",
+        },
+        {
+        title: "Flexibilidad de diseño",
+        description:
+            "Permite adaptar la solución a diferentes conceptos arquitectónicos y configuraciones interiores.",
+        },
+        {
+        title: "Acceso organizado",
+        description:
+            "Dependiendo de la configuración utilizada, puede facilitar el acceso a instalaciones ubicadas en la parte superior.",
+        },
+        {
+        title: "Espacios más ordenados",
+        description:
+            "Contribuye a mantener una apariencia interior más limpia y profesional.",
+        },
+    ],
   },
 
   "fachada-ventilada": {
