@@ -1,47 +1,67 @@
 const solutions = [
   {
-    id: "canalones-pluviales",
-    title: "Canalones para agua pluvial",
-    category: "Pluvial continuo",
+    id: "canalon-continuo",
+    slug: "canalon-continuo",
+    title: "Canalón continuo",
+    category: "Evacuación pluvial",
     description:
-      "Sistemas continuos de aluminio fabricados a medida para gestionar el agua de lluvia con un acabado limpio y funcional.",
+      "Sistema de canalización pluvial fabricado a medida para adaptarse a las características de cada proyecto.",
     benefit:
-      "Fabricación a medida · Integración arquitectónica",
+      "Solución continua, limpia y adaptable a distintos tipos de construcción.",
     image: null,
-    href: "/soluciones#canalones",
+    href: "/soluciones/canalon-continuo",
   },
+
   {
     id: "cubre-pretil",
+    slug: "cubre-pretil",
     title: "Cubre Pretil / Goterón",
-    category: "Remate perimetral",
+    category: "Protección arquitectónica",
     description:
-      "Soluciones de protección para pretiles y bordes que ayudan a reducir escurrimientos, humedad y deterioro en fachadas.",
+      "Sistema diseñado para proteger remates, pretiles y bordes expuestos frente al agua y los escurrimientos.",
     benefit:
-      "Protección de fachada · Acabado continuo",
+      "Protección funcional integrada al diseño arquitectónico.",
     image: null,
-    href: "/soluciones#cubre-pretil",
+    href: "/soluciones/cubre-pretil",
   },
+
   {
     id: "techos-falsos",
+    slug: "techos-falsos",
     title: "Techos Falsos / Plafones",
-    category: "Interiores y aleros",
+    category: "Acabados arquitectónicos",
     description:
-      "Sistemas arquitectónicos metálicos para interiores, espacios comerciales y aplicaciones donde se busca estética y durabilidad.",
+      "Soluciones para interiores y áreas cubiertas que combinan diseño, funcionalidad e integración técnica.",
     benefit:
-      "Bajo mantenimiento · Estética arquitectónica",
+      "Acabados adaptables para espacios comerciales, corporativos y arquitectónicos.",
     image: null,
-    href: "/soluciones#techos-falsos",
+    href: "/soluciones/techos-falsos",
   },
+
   {
-    id: "fachadas-ventiladas",
-    title: "Fachadas Ventiladas",
-    category: "Envolvente térmica",
+    id: "fachada-ventilada",
+    slug: "fachada-ventilada",
+    title: "Fachada Ventilada",
+    category: "Envolvente arquitectónica",
     description:
-      "Sistemas de fachada que combinan protección exterior, comportamiento térmico y una imagen arquitectónica contemporánea.",
+      "Sistema de revestimiento exterior orientado a mejorar la protección y la integración visual del inmueble.",
     benefit:
-      "Protección exterior · Integración arquitectónica",
+      "Solución arquitectónica para protección exterior y renovación de fachadas.",
     image: null,
-    href: "/soluciones#fachadas",
+    href: "/soluciones/fachada-ventilada",
+  },
+
+  {
+    id: "aislante-termico",
+    slug: "aislante-termico",
+    title: "Aislante Térmico",
+    category: "Aislamiento",
+    description:
+      "Solución orientada a mejorar el comportamiento térmico de la envolvente y aportar mayor confort al proyecto.",
+    benefit:
+      "Apoyo al desempeño térmico de distintos sistemas constructivos.",
+    image: null,
+    href: "/soluciones/aislante-termico",
   },
 ];
 

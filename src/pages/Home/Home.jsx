@@ -169,7 +169,7 @@ function Home() {
           </div>
 
           <div className="home-solutions__grid">
-            {solutions.map((solution) => (
+            {solutions.slice(0, 4).map((solution) => (
               <SolutionCard
                 key={solution.id}
                 {...solution}
