@@ -1,4 +1,5 @@
 import Hero from "../../components/Hero/Hero";
+import ContactForm from "../../components/ContactForm/ContactForm";
 
 import "./Contact.css";
 
@@ -28,12 +29,7 @@ function Contact() {
       <section className="contact-main section">
         <div className="container contact-main__grid">
           <div className="contact-main__form">
-            <div className="contact-main__placeholder">
-              <span>Formulario de cotización</span>
-              <p>
-                El formulario será implementado en el siguiente paso.
-              </p>
-            </div>
+            <ContactForm />
           </div>
 
           <aside className="contact-main__sidebar">
