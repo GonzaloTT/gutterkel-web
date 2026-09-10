@@ -8,6 +8,7 @@ import SolutionIntro from "../../components/SolutionIntro/SolutionIntro";
 import MobileProfiler from "../../components/MobileProfiler/MobileProfiler";
 import GutterParts from "../../components/GutterParts/GutterParts";
 import FixingSystems from "../../components/FixingSystems/FixingSystems";
+import FacadeElements from "../../components/FacadeElements/FacadeElements";
 
 import solutionDetails from "../../data/solutionDetails";
 
@@ -103,6 +104,12 @@ function SolutionDetail() {
           title="Ventajas únicas"
           description="Beneficios que aporta esta solución dentro de distintos tipos de proyecto."
           items={solution.advantages}
+        />
+      )}
+
+      {solution.facadeElements && (
+        <FacadeElements
+            {...solution.facadeElements}
         />
       )}
 

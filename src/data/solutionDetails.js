@@ -314,11 +314,112 @@ const solutionDetails = {
 
   "fachada-ventilada": {
     slug: "fachada-ventilada",
+
     category: "Envolvente arquitectónica",
-    title: "Fachadas Ventiladas",
+
+    title: "Fachada Ventilada",
+
     description:
-      "Sistema de revestimiento exterior diseñado para mejorar la protección e integración arquitectónica del inmueble.",
+        "Sistema de envolvente arquitectónica que incorpora una cámara de aire entre el revestimiento exterior y el cerramiento del edificio, permitiendo una solución técnica y estética adaptable a distintos proyectos.",
+
     heroImage: null,
+
+    intro: {
+        eyebrow: "¿Qué es esta solución?",
+
+        title:
+        "Un sistema de fachada con cámara de aire y revestimiento exterior",
+
+        description:
+        "La fachada ventilada está compuesta por diferentes capas que trabajan en conjunto para crear una envolvente exterior separada del cerramiento principal del edificio. Entre ambas superficies se genera una cámara de aire que forma parte del funcionamiento del sistema.",
+
+        image: null,
+    },
+
+    features: [
+        {
+        title: "Sistema multicapa",
+        description:
+            "Integra revestimiento, estructura de soporte, cámara de aire, aislamiento y cerramiento dentro de una misma solución.",
+        },
+        {
+        title: "Cámara de aire",
+        description:
+            "Incorpora una separación entre el revestimiento exterior y el cerramiento principal del edificio.",
+        },
+        {
+        title: "Diseño adaptable",
+        description:
+            "Puede configurarse de acuerdo con las dimensiones, geometría y características arquitectónicas del proyecto.",
+        },
+        {
+        title: "Integración de revestimientos",
+        description:
+            "Permite incorporar diferentes acabados exteriores dependiendo de la solución especificada para cada obra.",
+        },
+    ],
+
+    advantages: [
+        {
+        title: "Protección de la envolvente",
+        description:
+            "El revestimiento exterior ayuda a reducir la exposición directa del cerramiento principal a las condiciones ambientales.",
+        },
+        {
+        title: "Integración arquitectónica",
+        description:
+            "Permite desarrollar fachadas con diferentes acabados, modulaciones y configuraciones visuales.",
+        },
+        {
+        title: "Solución técnica adaptable",
+        description:
+            "El sistema puede ajustarse a las características constructivas y necesidades específicas de cada proyecto.",
+        },
+        {
+        title: "Organización por capas",
+        description:
+            "La composición del sistema permite separar claramente las distintas funciones de la envolvente arquitectónica.",
+        },
+    ],
+
+    facadeElements: {
+        eyebrow: "Composición del sistema",
+
+        title: "Elementos de una fachada ventilada",
+
+        description:
+        "Una fachada ventilada se compone de diferentes elementos que trabajan conjuntamente para formar la envolvente exterior del edificio.",
+
+        image: null,
+
+        items: [
+        {
+            name: "Revestimiento",
+            description:
+            "Capa exterior visible que forma el acabado arquitectónico de la fachada.",
+        },
+        {
+            name: "Anclaje",
+            description:
+            "Sistema de soporte encargado de fijar el revestimiento exterior a la estructura correspondiente.",
+        },
+        {
+            name: "Cámara de aire",
+            description:
+            "Espacio existente entre el revestimiento exterior y las capas interiores del sistema.",
+        },
+        {
+            name: "Aislamiento",
+            description:
+            "Capa incorporada en la envolvente para complementar el desempeño térmico del sistema.",
+        },
+        {
+            name: "Cerramiento interior",
+            description:
+            "Elemento constructivo que delimita el edificio y funciona como base interior de la envolvente.",
+        },
+        ],
+    },
   },
 
   "aislante-termico": {
