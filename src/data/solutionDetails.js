@@ -424,11 +424,73 @@ const solutionDetails = {
 
   "aislante-termico": {
     slug: "aislante-termico",
-    category: "Aislamiento",
+
+    category: "Eficiencia de envolvente",
+
     title: "Aislante Térmico",
+
     description:
-      "Solución orientada a mejorar el comportamiento térmico de la envolvente y aportar mayor confort al proyecto.",
+        "Solución orientada a complementar el desempeño térmico de cubiertas, fachadas y otros elementos constructivos mediante la incorporación de materiales aislantes adecuados a cada proyecto.",
+
     heroImage: null,
+
+    intro: {
+        eyebrow: "¿Qué es esta solución?",
+
+        title:
+        "Aislamiento aplicado a la envolvente del edificio",
+
+        description:
+        "El aislamiento térmico se incorpora en distintos elementos constructivos con el objetivo de reducir la transferencia de calor entre el interior y el exterior. Su selección y configuración dependen del tipo de sistema, las condiciones del proyecto y las necesidades específicas de cada obra.",
+
+        image: null,
+    },
+
+    features: [
+        {
+        title: "Aplicación en envolventes",
+        description:
+            "Puede integrarse en cubiertas, fachadas y otros sistemas constructivos según las características del proyecto.",
+        },
+        {
+        title: "Solución adaptable",
+        description:
+            "La configuración del aislamiento puede ajustarse al sistema constructivo y a las necesidades particulares de cada obra.",
+        },
+        {
+        title: "Integración con otros sistemas",
+        description:
+            "Puede formar parte de soluciones más amplias de fachada, cubierta o cerramiento.",
+        },
+        {
+        title: "Selección según proyecto",
+        description:
+            "El tipo de material y su disposición se determinan considerando las condiciones constructivas y de uso del edificio.",
+        },
+    ],
+
+    advantages: [
+        {
+        title: "Mejor control térmico",
+        description:
+            "Contribuye a reducir el intercambio de calor a través de los elementos donde se encuentra instalado.",
+        },
+        {
+        title: "Mayor confort interior",
+        description:
+            "Puede ayudar a mantener condiciones interiores más estables cuando se integra correctamente dentro del sistema constructivo.",
+        },
+        {
+        title: "Compatibilidad constructiva",
+        description:
+            "Puede combinarse con diferentes soluciones de fachada, cubierta y cerramiento.",
+        },
+        {
+        title: "Adaptación técnica",
+        description:
+            "La solución puede definirse de acuerdo con la geometría, materiales y requerimientos específicos del proyecto.",
+        },
+    ],
   },
 };
 
