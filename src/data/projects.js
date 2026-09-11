@@ -1,3 +1,10 @@
+import project01 from "../assets/images/projects/project-01.png";
+import project02 from "../assets/images/projects/project-02.png";
+import project03 from "../assets/images/projects/project-03.png";
+import project04 from "../assets/images/projects/project-04.png";
+import project05 from "../assets/images/projects/project-05.png";
+import project06 from "../assets/images/projects/project-06.png";
+
 const projects = [
   {
     id: 1,
@@ -7,8 +14,7 @@ const projects = [
     location: "Querétaro",
     description:
       "Aplicación residencial con solución arquitectónica adaptada a las características del inmueble.",
-    image: null,
-    status: "placeholder",
+    image: project01,
   },
   {
     id: 2,
@@ -18,8 +24,7 @@ const projects = [
     location: "Querétaro",
     description:
       "Solución aplicada en un entorno comercial con enfoque en integración técnica y estética.",
-    image: null,
-    status: "placeholder",
+    image: project02,
   },
   {
     id: 3,
@@ -29,8 +34,7 @@ const projects = [
     location: "México",
     description:
       "Aplicación de sistema arquitectónico orientado a protección exterior e integración visual.",
-    image: null,
-    status: "placeholder",
+    image: project03,
   },
   {
     id: 4,
@@ -40,8 +44,7 @@ const projects = [
     location: "México",
     description:
       "Aplicación de solución arquitectónica para interiores y espacios corporativos.",
-    image: null,
-    status: "placeholder",
+    image: project04,
   },
   {
     id: 5,
@@ -51,8 +54,7 @@ const projects = [
     location: "México",
     description:
       "Solución técnica aplicada a un proyecto industrial con requerimientos específicos.",
-    image: null,
-    status: "placeholder",
+    image: project05,
   },
   {
     id: 6,
@@ -62,8 +64,7 @@ const projects = [
     location: "México",
     description:
       "Sistema de canalización adaptado a las dimensiones y necesidades del proyecto.",
-    image: null,
-    status: "placeholder",
+    image: project06,
   },
 ];
 
