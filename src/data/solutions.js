@@ -1,3 +1,8 @@
+import canalonImage from "../assets/images/solutions/canalon/card-canalon.png";
+import cubrePretilImage from "../assets/images/solutions/cubre-pretil/card-cubre-pretil.png";
+import techosFalsosImage from "../assets/images/solutions/techos-falsos/card-techos-falsos.png";
+import fachadaVentiladaImage from "../assets/images/solutions/fachada-ventilada/card-fachada-ventilada.png";
+
 const solutions = [
   {
     id: "canalon-continuo",
@@ -8,7 +13,7 @@ const solutions = [
       "Sistema de canalización pluvial fabricado a medida para adaptarse a las características de cada proyecto.",
     benefit:
       "Solución continua, limpia y adaptable a distintos tipos de construcción.",
-    image: null,
+    image: canalonImage,
     href: "/soluciones/canalon-continuo",
   },
 
@@ -21,7 +26,7 @@ const solutions = [
       "Sistema diseñado para proteger remates, pretiles y bordes expuestos frente al agua y los escurrimientos.",
     benefit:
       "Protección funcional integrada al diseño arquitectónico.",
-    image: null,
+    image: cubrePretilImage,
     href: "/soluciones/cubre-pretil",
   },
 
@@ -34,7 +39,7 @@ const solutions = [
       "Soluciones para interiores y áreas cubiertas que combinan diseño, funcionalidad e integración técnica.",
     benefit:
       "Acabados adaptables para espacios comerciales, corporativos y arquitectónicos.",
-    image: null,
+    image: techosFalsosImage,
     href: "/soluciones/techos-falsos",
   },
 
@@ -47,7 +52,7 @@ const solutions = [
       "Sistema de revestimiento exterior orientado a mejorar la protección y la integración visual del inmueble.",
     benefit:
       "Solución arquitectónica para protección exterior y renovación de fachadas.",
-    image: null,
+    image: fachadaVentiladaImage,
     href: "/soluciones/fachada-ventilada",
   },
 

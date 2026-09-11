@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+
+import gutterkelLogo from "../../assets/images/branding/gutterkel-logo.jpg";
+
 import "./Footer.css";
 
 function Footer() {
@@ -7,7 +10,7 @@ function Footer() {
       <div className="container footer__container">
         <div className="footer__brand">
           <img
-            src="/images/branding/gutterkel-logo-white.png"
+            src={gutterkelLogo}
             alt="Gutterkel México"
             className="footer__logo"
           />

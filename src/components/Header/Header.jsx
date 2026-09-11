@@ -3,6 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 
 import solutions from "../../data/solutions";
 
+import gutterkelLogo from "../../assets/images/branding/gutterkel-logo.jpg";
+
 import {
   ChevronDownIcon,
 } from "../Icons/Icons";
@@ -48,7 +50,7 @@ function Header() {
           onClick={closeMenu}
         >
           <img
-            src="/images/branding/gutterkel-logo.png"
+            src={gutterkelLogo}
             alt="Gutterkel México"
             className="header__logo"
           />

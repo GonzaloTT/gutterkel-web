@@ -20,8 +20,20 @@
 }
 
 .footer__logo {
+  display: block;
+
   width: 160px;
-  margin-bottom: var(--space-lg);
+  height: auto;
+
+  padding: 0.4rem;
+
+  background: var(--color-white);
+
+  border-radius: var(--radius-md);
+
+  box-shadow:
+    0 6px 18px
+    rgb(0 0 0 / 0.12);
 }
 
 .footer__description {

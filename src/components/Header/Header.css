@@ -34,9 +34,8 @@
 .header__logo {
   display: block;
 
-  width: auto;
-  max-width: 170px;
-  height: 42px;
+  width: 120px;
+  height: auto;
 
   object-fit: contain;
 }
@@ -354,8 +353,7 @@
   }
 
   .header__logo {
-    max-width: 150px;
-    height: 38px;
+    width: 105px;
   }
 
   .header__menu-button {
@@ -523,7 +521,7 @@
 
 @media (max-width: 520px) {
   .header__logo {
-    max-width: 135px;
+    width: 105px;
   }
 
   .header__mobile-panel {

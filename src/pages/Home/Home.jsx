@@ -5,6 +5,10 @@ import Hero from "../../components/Hero/Hero";
 import NumberedCard from "../../components/NumberedCard/NumberedCard";
 import SolutionCard from "../../components/SolutionCard/SolutionCard";
 
+import heroImage01 from "../../assets/images/home/hero-gutterkel-01.png";
+import heroImage02 from "../../assets/images/home/hero-gutterkel-02.png";
+import heroImage03 from "../../assets/images/home/hero-gutterkel-03.png";
+
 import solutions from "../../data/solutions";
 
 import {
@@ -25,6 +29,21 @@ import {
 import "./Home.css";
 
 function Home() {
+  const heroSlides = [
+    {
+      image: heroImage01,
+      position: "center center",
+    },
+    {
+      image: heroImage02,
+      position: "center center",
+    },
+    {
+      image: heroImage03,
+      position: "center 35%",
+    },
+  ];
+
   const heroActions = [
     {
       label: "Solicitar cotización",
@@ -137,6 +156,7 @@ function Home() {
         eyebrow="Ingeniería europea · Fabricación a medida en México"
         title="Soluciones que protegen y transforman tu fachada"
         description="Sistemas de canalización pluvial, protección arquitectónica y acabados fabricados a medida para residencias, desarrollos comerciales e industriales."
+        slides={heroSlides}
         actions={heroActions}
         highlights={heroHighlights}
       />
