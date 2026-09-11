@@ -15,6 +15,15 @@ import fixingSeparadorZ from "../assets/images/solutions/canalon/fixing-systems/
 import fixingSoporteUral from "../assets/images/solutions/canalon/fixing-systems/fixing-soporte-ural.png";
 import fixingGanchoNieve from "../assets/images/solutions/canalon/fixing-systems/fixing-gancho-nieve.png";
 
+import heroCubrePretil from "../assets/images/solutions/cubre-pretil/card-cubre-pretil.png";
+import introCubrePretil from "../assets/images/solutions/cubre-pretil/intro/intro-cubre-pretil-01.png";
+
+import heroTechosFalsos from "../assets/images/solutions/techos-falsos/card-techos-falsos.png";
+import introTechosFalsos from "../assets/images/solutions/techos-falsos/intro/intro-techos-falsos-01.png";
+
+import heroAislanteTermico from "../assets/images/solutions/aislante-termico/hero/hero-aislante-termico-01.png";
+import introAislanteTermico from "../assets/images/solutions/aislante-termico/intro/intro-aislante-termico-01.png";
+
 const solutionDetails = {
   "canalon-continuo": {
     slug: "canalon-continuo",
@@ -197,7 +206,7 @@ const solutionDetails = {
     description:
         "Sistema diseñado para proteger remates, pretiles y bordes expuestos frente al agua, los escurrimientos y el deterioro asociado a la humedad.",
 
-    heroImage: null,
+    heroImage: heroCubrePretil,
 
     intro: {
         eyebrow: "¿Qué es esta solución?",
@@ -208,7 +217,7 @@ const solutionDetails = {
         description:
         "El sistema de Cubre Pretil y Goterón se utiliza para proteger zonas superiores y bordes de la construcción, ayudando a controlar el escurrimiento del agua y a reducir el contacto directo de la humedad con elementos arquitectónicos sensibles.",
 
-        image: null,
+        image: introCubrePretil,
     },
 
     features: [
@@ -268,7 +277,7 @@ const solutionDetails = {
     description:
         "Solución arquitectónica para crear acabados interiores limpios y funcionales, permitiendo ocultar instalaciones y mejorar la integración visual de distintos espacios.",
 
-    heroImage: null,
+    heroImage: heroTechosFalsos,
 
     intro: {
         eyebrow: "¿Qué es esta solución?",
@@ -279,7 +288,7 @@ const solutionDetails = {
         description:
         "Los techos falsos y plafones permiten crear una superficie secundaria debajo de la estructura principal del techo. Esto facilita la integración visual de instalaciones, luminarias y otros elementos técnicos, al mismo tiempo que contribuye a mantener un acabado interior más uniforme y ordenado.",
 
-        image: null,
+        image: introTechosFalsos,
     },
 
     features: [
@@ -449,7 +458,7 @@ const solutionDetails = {
     description:
         "Solución orientada a complementar el desempeño térmico de cubiertas, fachadas y otros elementos constructivos mediante la incorporación de materiales aislantes adecuados a cada proyecto.",
 
-    heroImage: null,
+    heroImage: heroAislanteTermico,
 
     intro: {
         eyebrow: "¿Qué es esta solución?",
@@ -460,7 +469,7 @@ const solutionDetails = {
         description:
         "El aislamiento térmico se incorpora en distintos elementos constructivos con el objetivo de reducir la transferencia de calor entre el interior y el exterior. Su selección y configuración dependen del tipo de sistema, las condiciones del proyecto y las necesidades específicas de cada obra.",
 
-        image: null,
+        image: introAislanteTermico,
     },
 
     features: [
