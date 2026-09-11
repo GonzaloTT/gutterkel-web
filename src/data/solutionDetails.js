@@ -21,6 +21,10 @@ import introCubrePretil from "../assets/images/solutions/cubre-pretil/intro/intr
 import heroTechosFalsos from "../assets/images/solutions/techos-falsos/card-techos-falsos.png";
 import introTechosFalsos from "../assets/images/solutions/techos-falsos/intro/intro-techos-falsos-01.png";
 
+import heroFachadaVentilada from "../assets/images/solutions/fachada-ventilada/card-fachada-ventilada.png";
+import introFachadaVentilada from "../assets/images/solutions/techos-falsos/intro/intro-techos-falsos-01.png";
+import facadeElementsImage from "../assets/images/solutions/fachada-ventilada/elements/facade-elements-01.png";
+
 import heroAislanteTermico from "../assets/images/solutions/aislante-termico/hero/hero-aislante-termico-01.png";
 import introAislanteTermico from "../assets/images/solutions/aislante-termico/intro/intro-aislante-termico-01.png";
 
@@ -348,7 +352,7 @@ const solutionDetails = {
     description:
         "Sistema de envolvente arquitectónica que incorpora una cámara de aire entre el revestimiento exterior y el cerramiento del edificio, permitiendo una solución técnica y estética adaptable a distintos proyectos.",
 
-    heroImage: null,
+    heroImage: heroFachadaVentilada,
 
     intro: {
         eyebrow: "¿Qué es esta solución?",
@@ -359,7 +363,7 @@ const solutionDetails = {
         description:
         "La fachada ventilada está compuesta por diferentes capas que trabajan en conjunto para crear una envolvente exterior separada del cerramiento principal del edificio. Entre ambas superficies se genera una cámara de aire que forma parte del funcionamiento del sistema.",
 
-        image: null,
+        image: introFachadaVentilada,
     },
 
     features: [
@@ -416,7 +420,7 @@ const solutionDetails = {
         description:
         "Una fachada ventilada se compone de diferentes elementos que trabajan conjuntamente para formar la envolvente exterior del edificio.",
 
-        image: null,
+        image: facadeElementsImage,
 
         items: [
         {
