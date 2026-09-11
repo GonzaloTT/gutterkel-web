@@ -130,6 +130,7 @@
   font-size: 1.05rem;
 }
 
+
 /* =========================================
    HOME HERO CAROUSEL
 ========================================= */
@@ -278,6 +279,7 @@
 
   background: var(--color-primary);
 }
+
 
 /* =========================================
    BACKGROUND PLACEHOLDER
@@ -542,7 +544,7 @@
 
   min-height: 520px;
 
-  margin-right: clamp(1rem, 2.5vw, 2.5rem);
+  margin-right: clamp(2rem, 4vw, 5rem);
 
   padding-block:
     var(--space-4xl)
@@ -556,16 +558,25 @@
     linear-gradient(
       90deg,
       rgb(255 255 255 / 0.98) 0%,
-      rgb(255 255 255 / 0.94) 34%,
-      rgb(255 255 255 / 0.78) 52%,
-      rgb(255 255 255 / 0.34) 72%,
-      rgb(255 255 255 / 0.08) 100%
+      rgb(255 255 255 / 0.94) 30%,
+      rgb(255 255 255 / 0.78) 46%,
+      rgb(255 255 255 / 0.38) 62%,
+      rgb(255 255 255 / 0.08) 78%,
+      rgb(255 255 255 / 0) 100%
     ),
     var(--hero-background-image);
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-repeat:
+    no-repeat,
+    no-repeat;
+
+  background-position:
+    center,
+    right 2rem center;
+
+  background-size:
+    cover,
+    auto 90%;
 
   border-radius:
     0
@@ -706,23 +717,33 @@
   }
 
   .hero--solution-detail {
-    margin-right: 0;
-
-    border-radius: 0;
-
     min-height: auto;
+
+    margin-right: 0;
 
     background-image:
       linear-gradient(
         90deg,
         rgb(255 255 255 / 0.98) 0%,
-        rgb(255 255 255 / 0.9) 52%,
-        rgb(255 255 255 / 0.6) 78%,
-        rgb(255 255 255 / 0.4) 100%
+        rgb(255 255 255 / 0.9) 48%,
+        rgb(255 255 255 / 0.62) 70%,
+        rgb(255 255 255 / 0.3) 100%
       ),
       var(--hero-background-image);
 
-    background-position: center;
+    background-repeat:
+      no-repeat,
+      no-repeat;
+
+    background-position:
+      center,
+      right 1rem center;
+
+    background-size:
+      cover,
+      auto 92%;
+
+    border-radius: 0;
   }
 
   .hero--solution-detail .hero__container {
@@ -762,14 +783,14 @@
   }
 
   .hero__carousel-overlay {
-  background:
-    linear-gradient(
-      90deg,
-      rgb(255 255 255 / 0.98) 0%,
-      rgb(255 255 255 / 0.92) 48%,
-      rgb(255 255 255 / 0.6) 72%,
-      rgb(255 255 255 / 0.4) 100%
-    );
+    background:
+      linear-gradient(
+        90deg,
+        rgb(255 255 255 / 0.98) 0%,
+        rgb(255 255 255 / 0.92) 48%,
+        rgb(255 255 255 / 0.6) 72%,
+        rgb(255 255 255 / 0.4) 100%
+      );
   }
 }
 
@@ -807,22 +828,30 @@
   .hero--solution-detail {
     min-height: auto;
 
+    margin-right: 0;
+
     padding-block:
       var(--space-3xl)
       var(--space-2xl);
 
     background-image:
       linear-gradient(
-        rgb(255 255 255 / 0.9),
-        rgb(255 255 255 / 0.95)
+        rgb(255 255 255 / 0.86),
+        rgb(255 255 255 / 0.94)
       ),
       var(--hero-background-image);
 
-    background-position: 65% center;
-  }
+    background-repeat:
+      no-repeat,
+      no-repeat;
 
-  .hero--solution-detail {
-    margin-right: 0;
+    background-position:
+      center,
+      center;
+
+    background-size:
+      cover,
+      cover;
 
     border-radius: 0;
   }
@@ -1000,6 +1029,11 @@
     height: 36px;
   }
 }
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
 
 @media (prefers-reduced-motion: reduce) {
   .hero__carousel-slide {
