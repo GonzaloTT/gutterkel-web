@@ -542,9 +542,13 @@
 
   min-height: 520px;
 
+  margin-right: clamp(1rem, 2.5vw, 2.5rem);
+
   padding-block:
     var(--space-4xl)
     var(--space-3xl);
+
+  overflow: hidden;
 
   background-color: var(--color-background-alt);
 
@@ -562,6 +566,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  border-radius:
+    0
+    var(--radius-xl)
+    var(--radius-xl)
+    0;
 }
 
 .hero--solution-detail .hero__container {
@@ -696,6 +706,10 @@
   }
 
   .hero--solution-detail {
+    margin-right: 0;
+
+    border-radius: 0;
+
     min-height: auto;
 
     background-image:
@@ -805,6 +819,12 @@
       var(--hero-background-image);
 
     background-position: 65% center;
+  }
+
+  .hero--solution-detail {
+    margin-right: 0;
+
+    border-radius: 0;
   }
 
   .hero--solution-detail .hero__container {

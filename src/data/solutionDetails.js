@@ -1,3 +1,20 @@
+import heroCanalon from "../assets/images/solutions/canalon/hero/hero-canalon-01.png";
+import introCanalon from "../assets/images/solutions/canalon/intro/intro-canalon-01.png";
+import mobileProfilerImage from "../assets/images/solutions/canalon/mobile-profiler/mobile-profiler-01.png";
+
+import partPerfil from "../assets/images/solutions/canalon/parts/part-perfil.png";
+import partCodo from "../assets/images/solutions/canalon/parts/part-codo.png";
+import partNacimiento from "../assets/images/solutions/canalon/parts/part-nacimiento.png";
+import partBajante from "../assets/images/solutions/canalon/parts/part-bajante.png";
+import partTapa from "../assets/images/solutions/canalon/parts/part-tapa.png";
+
+import fixingCornisa from "../assets/images/solutions/canalon/fixing-systems/fixing-cornisa.png";
+import fixingPicoCanalon from "../assets/images/solutions/canalon/fixing-systems/fixing-pico-canalon.png";
+import fixingSeparador from "../assets/images/solutions/canalon/fixing-systems/fixing-separador.png";
+import fixingSeparadorZ from "../assets/images/solutions/canalon/fixing-systems/fixing-separador-z.png";
+import fixingSoporteUral from "../assets/images/solutions/canalon/fixing-systems/fixing-soporte-ural.png";
+import fixingGanchoNieve from "../assets/images/solutions/canalon/fixing-systems/fixing-gancho-nieve.png";
+
 const solutionDetails = {
   "canalon-continuo": {
     slug: "canalon-continuo",
@@ -9,7 +26,7 @@ const solutionDetails = {
     description:
         "Sistema de canalización pluvial fabricado a medida para adaptarse a las características de cada proyecto y ofrecer una integración limpia, funcional y duradera.",
 
-    heroImage: null,
+    heroImage: heroCanalon,
 
     intro: {
         eyebrow: "¿Qué es esta solución?",
@@ -17,7 +34,7 @@ const solutionDetails = {
         "Canalización pluvial fabricada a medida para cada proyecto",
         description:
         "El canalón continuo se fabrica de acuerdo con las dimensiones reales de la obra, permitiendo reducir uniones visibles y adaptar el sistema a las necesidades arquitectónicas de cada construcción.",
-        image: null,
+        image: introCanalon,
     },
 
     features: [
@@ -73,7 +90,7 @@ const solutionDetails = {
             "Fabricación directamente adaptada a cada proyecto",
         description:
             "La perfiladora móvil permite fabricar el sistema de canalón de acuerdo con las dimensiones necesarias para cada obra, reduciendo procesos adicionales y facilitando una instalación adaptada al proyecto.",
-        image: null,
+        image: mobileProfilerImage,
     },
 
     gutterParts: {
@@ -89,31 +106,31 @@ const solutionDetails = {
             name: "Perfil",
             description:
                 "Elemento principal del sistema encargado de recibir y conducir el agua pluvial.",
-            image: null,
+            image: partPerfil,
             },
             {
             name: "Codo",
             description:
                 "Pieza diseñada para adaptar la conducción del agua a cambios de dirección.",
-            image: null,
+            image: partCodo,
             },
             {
             name: "Nacimiento",
             description:
                 "Conecta el canalón con el sistema de bajada para dirigir el flujo de agua.",
-            image: null,
+            image: partNacimiento,
             },
             {
             name: "Bajante",
             description:
                 "Conduce el agua desde el canalón hacia el punto de descarga o recolección.",
-            image: null,
+            image: partBajante,
             },
             {
             name: "Tapa",
             description:
                 "Cierra los extremos del canalón y ayuda a mantener el flujo dentro del sistema.",
-            image: null,
+            image: partTapa,
             },
         ],
     },
@@ -134,37 +151,37 @@ const solutionDetails = {
             name: "Fijación sobre cornisa",
             description:
                 "Configuración pensada para instalaciones sobre bordes o elementos de cornisa.",
-            image: null,
+            image: fixingCornisa,
             },
             {
             name: "Gancho pico canalón",
             description:
                 "Sistema de soporte adaptado a determinadas geometrías de cubierta.",
-            image: null,
+            image: fixingPicoCanalon,
             },
             {
             name: "Gancho separador",
             description:
                 "Permite mantener una separación controlada entre el canalón y el elemento de soporte.",
-            image: null,
+            image: fixingSeparador,
             },
             {
             name: "Gancho separador tipo Z",
             description:
                 "Alternativa de fijación para configuraciones donde se requiere mayor desplazamiento respecto al soporte.",
-            image: null,
+            image: fixingSeparadorZ,
             },
             {
             name: "Soporte mural",
             description:
                 "Configuración diseñada para fijación directa sobre elementos verticales.",
-            image: null,
+            image: fixingSoporteUral,
             },
             {
             name: "Gancho de nieve",
             description:
                 "Configuración específica para determinados escenarios de cubierta y soporte.",
-            image: null,
+            image: fixingGanchoNieve,
             },
         ],
     },
