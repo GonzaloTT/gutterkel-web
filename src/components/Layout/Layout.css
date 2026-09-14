@@ -1,0 +1,5 @@
+@media (max-width: 1180px) {
+  .layout__contact-clearance {
+    height: calc(88px + env(safe-area-inset-bottom));
+  }
+}
