@@ -1,3 +1,4 @@
+import { contactLinks } from "../../config/contact";
 import { Link } from "react-router-dom";
 
 import CTASection from "../../components/CTASection/CTASection";
@@ -71,7 +72,9 @@ function Home() {
     },
     {
       label: "WhatsApp rápido",
-      href: "#",
+      href: contactLinks.whatsapp,
+      target: "_blank",
+      rel: "noopener noreferrer",
       variant: "whatsapp",
       icon: <WhatsAppIcon />,
     },
@@ -148,13 +151,15 @@ function Home() {
     },
     {
       label: "Contactar por WhatsApp",
-      href: "#",
+      href: contactLinks.whatsapp,
+      target: "_blank",
+      rel: "noopener noreferrer",
       variant: "whatsapp",
       icon: <WhatsAppIcon />,
     },
     {
       label: "Llamar ahora",
-      href: "tel:+524423209124",
+      href: contactLinks.phone,
       variant: "secondary",
       icon: <PhoneIcon />,
     },

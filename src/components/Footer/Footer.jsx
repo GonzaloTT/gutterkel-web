@@ -1,3 +1,4 @@
+import { contact, contactLinks } from "../../config/contact";
 import { Link } from "react-router-dom";
 
 import gutterkelLogo from "../../assets/images/branding/gutterkel-logo.jpg";
@@ -42,16 +43,16 @@ function Footer() {
         <div className="footer__column">
           <h2 className="footer__title">Contacto</h2>
 
-          <a href="tel:+524423209124">
-            442 320 9124
+          <a href={contactLinks.phone}>
+            {contact.phoneDisplay}
           </a>
 
-          <a href="mailto:ventas@gutterkelmexico.com">
-            ventas@gutterkelmexico.com
+          <a href={contactLinks.email}>
+            {contact.publicEmail}
           </a>
 
           <p>
-            Querétaro, México
+            {contact.location}
           </p>
         </div>
       </div>
@@ -61,9 +62,11 @@ function Footer() {
           © 2026 Gutterkel México. Todos los derechos reservados.
         </p>
 
-        <Link to="/aviso-de-privacidad">
-          Aviso de privacidad
-        </Link>
+        {contact.privacyUrl ? (
+          <a href={contact.privacyUrl}>Aviso de privacidad</a>
+        ) : (
+          <span>Aviso de privacidad pendiente de publicación</span>
+        )}
       </div>
     </footer>
   );

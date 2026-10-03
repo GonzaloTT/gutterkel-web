@@ -1,3 +1,4 @@
+import { contact, contactLinks } from "../../config/contact";
 import Hero from "../../components/Hero/Hero";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import FAQ from "../../components/FAQ/FAQ";
@@ -92,7 +93,7 @@ function Contact() {
               </div>
 
               <p className="contact-card__value">
-                442 320 9124
+                {contact.phoneDisplay}
               </p>
 
               <p className="contact-card__description">
@@ -101,7 +102,9 @@ function Contact() {
               </p>
 
               <a
-                href="#"
+                href={contactLinks.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="contact-card__action contact-card__action--whatsapp"
               >
                 <WhatsAppIcon size={17} />
@@ -128,7 +131,7 @@ function Contact() {
               </div>
 
               <p className="contact-card__value">
-                442 320 9124
+                {contact.phoneDisplay}
               </p>
 
               <p className="contact-card__description">
@@ -137,7 +140,7 @@ function Contact() {
               </p>
 
               <a
-                href="tel:+524423209124"
+                href={contactLinks.phone}
                 className="contact-card__action contact-card__action--dark"
               >
                 <PhoneIcon size={16} />
@@ -164,10 +167,10 @@ function Contact() {
               </div>
 
               <a
-                href="mailto:ventas@gutterkelmexico.com"
+                href={contactLinks.email}
                 className="contact-card__email"
               >
-                ventas@gutterkelmexico.com
+                {contact.publicEmail}
               </a>
 
               <p className="contact-card__description">
@@ -188,13 +191,13 @@ function Contact() {
                   </span>
 
                   <h2 className="contact-card__title">
-                    Querétaro, México
+                    {contact.location}
                   </h2>
                 </div>
               </div>
 
               <p className="contact-location__address">
-                Santa Bárbara, El Pueblito, Querétaro.
+                {contact.address}
               </p>
 
               <div className="contact-location__map">
@@ -207,12 +210,10 @@ function Contact() {
                 </div>
               </div>
 
-              <a
-                href="#"
-                className="contact-location__maps-link"
-              >
-                Ver en Google Maps
-              </a>
+              {contact.mapsUrl && (
+                <a href={contact.mapsUrl} target="_blank" rel="noopener noreferrer"
+                  className="contact-location__maps-link">Ver en Google Maps</a>
+              )}
             </article>
           </aside>
         </div>

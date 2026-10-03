@@ -1,2 +1,4 @@
-// Existing WhatsApp contact listed on the Contact page, with Mexico country code.
-export const WHATSAPP_URL = "https://wa.me/524423209124";
+import { contactLinks } from "../config/contact";
+
+// Preserve the existing public import used by WhatsAppButton.
+export const WHATSAPP_URL = contactLinks.whatsapp;

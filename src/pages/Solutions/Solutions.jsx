@@ -1,3 +1,4 @@
+import { contactLinks } from "../../config/contact";
 import Hero from "../../components/Hero/Hero";
 import SolutionCard from "../../components/SolutionCard/SolutionCard";
 import CTASection from "../../components/CTASection/CTASection";
@@ -22,13 +23,15 @@ function Solutions() {
     },
     {
       label: "Contactar por WhatsApp",
-      href: "#",
+      href: contactLinks.whatsapp,
+      target: "_blank",
+      rel: "noopener noreferrer",
       variant: "whatsapp",
       icon: <WhatsAppIcon />,
     },
     {
       label: "Llamar ahora",
-      href: "tel:+524423209124",
+      href: contactLinks.phone,
       variant: "secondary",
       icon: <PhoneIcon />,
     },

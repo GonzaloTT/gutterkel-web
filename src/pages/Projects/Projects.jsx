@@ -1,3 +1,4 @@
+import { contactLinks } from "../../config/contact";
 import Hero from "../../components/Hero/Hero";
 import NumberedCard from "../../components/NumberedCard/NumberedCard";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
@@ -70,13 +71,15 @@ function Projects() {
     },
     {
       label: "Contactar por WhatsApp",
-      href: "#",
+      href: contactLinks.whatsapp,
+      target: "_blank",
+      rel: "noopener noreferrer",
       variant: "whatsapp",
       icon: <WhatsAppIcon />,
     },
     {
       label: "Llamar ahora",
-      href: "tel:+524423209124",
+      href: contactLinks.phone,
       variant: "secondary",
       icon: <PhoneIcon />,
     },
