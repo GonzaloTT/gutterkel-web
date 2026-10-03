@@ -3,6 +3,7 @@ import {
   HashRouter,
   Routes,
   Route,
+  Navigate,
 } from "react-router-dom";
 
 import Layout from "../components/Layout/Layout";
@@ -28,6 +29,10 @@ function AppRouter() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/soluciones" element={<Solutions />} />
+          <Route
+            path="/soluciones/fachada-ventilada"
+            element={<Navigate to="/soluciones/sistema-de-anclaje" replace />}
+          />
           <Route
             path="/soluciones/:slug"
             element={<SolutionDetail />}

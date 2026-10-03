@@ -2,10 +2,10 @@ import "./FacadeElements.css";
 
 function FacadeElements({
   eyebrow = "Composición del sistema",
-  title = "Elementos de una fachada ventilada",
+  title = "Elementos del Sistema de Anclaje",
   description,
   image,
-  imageAlt = "Esquema de fachada ventilada",
+  imageAlt = "Esquema del Sistema de Anclaje",
   items = [],
 }) {
   return (

@@ -77,11 +77,13 @@ function SolutionDetail() {
   return (
     <>
       <Hero
+        key={solution.slug}
         variant="solution-detail"
         eyebrow={solution.category}
         title={solution.title}
         description={solution.description}
         image={solution.heroImage}
+        slides={solution.heroSlides}
       />
 
       {solution.intro && (

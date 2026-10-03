@@ -36,7 +36,7 @@ function Footer() {
           <Link to="/soluciones">Canalones pluviales</Link>
           <Link to="/soluciones">Cubre Pretil</Link>
           <Link to="/soluciones">Techos falsos</Link>
-          <Link to="/soluciones">Fachadas ventiladas</Link>
+          <Link to="/soluciones/sistema-de-anclaje">Sistema de Anclaje</Link>
         </div>
 
         <div className="footer__column">

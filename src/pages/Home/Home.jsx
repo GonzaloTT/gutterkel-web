@@ -5,9 +5,12 @@ import Hero from "../../components/Hero/Hero";
 import NumberedCard from "../../components/NumberedCard/NumberedCard";
 import SolutionCard from "../../components/SolutionCard/SolutionCard";
 
-import heroImage01 from "../../assets/images/home/hero-gutterkel-01.png";
-import heroImage02 from "../../assets/images/home/hero-gutterkel-02.png";
-import heroImage03 from "../../assets/images/home/hero-gutterkel-03.png";
+import heroImage01 from "../../assets/images/home/home-hero-canalon-01.png";
+import heroImage02 from "../../assets/images/home/home-hero-canalon-02.png";
+import heroImage03 from "../../assets/images/home/home-hero-cubre-pretil-01.jpeg";
+
+import heroImage04 from "../../assets/images/home/home-hero-plafon-01.png";
+import heroImage05 from "../../assets/images/home/home-hero-proyecto-01.jpeg";
 
 import solutions from "../../data/solutions";
 
@@ -40,7 +43,15 @@ function Home() {
     },
     {
       image: heroImage03,
-      position: "center 35%",
+      position: "center center",
+    },
+    {
+      image: heroImage04,
+      position: "center center",
+    },
+    {
+      image: heroImage05,
+      position: "center center",
     },
   ];
 

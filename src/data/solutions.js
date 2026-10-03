@@ -44,16 +44,16 @@ const solutions = [
   },
 
   {
-    id: "fachada-ventilada",
-    slug: "fachada-ventilada",
-    title: "Fachada Ventilada",
+    id: "sistema-de-anclaje",
+    slug: "sistema-de-anclaje",
+    title: "Sistema de Anclaje",
     category: "Envolvente arquitectónica",
     description:
       "Sistema de revestimiento exterior orientado a mejorar la protección y la integración visual del inmueble.",
     benefit:
       "Solución arquitectónica para protección exterior y renovación de fachadas.",
     image: fachadaVentiladaImage,
-    href: "/soluciones/fachada-ventilada",
+    href: "/soluciones/sistema-de-anclaje",
   },
 
   {

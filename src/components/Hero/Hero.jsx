@@ -19,7 +19,7 @@ function Hero({
   const [isCarouselPaused, setIsCarouselPaused] = useState(false);
 
   const hasCarousel =
-    variant === "home" &&
+    (variant === "home" || variant === "solution-detail") &&
     slides.length > 0;
 
   const supportsBackgroundImage =
@@ -52,22 +52,27 @@ function Hero({
       return undefined;
     }
 
-    const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)",
-    ).matches;
-
-    if (prefersReducedMotion || isCarouselPaused) {
+    if (isCarouselPaused) {
       return undefined;
     }
 
-    const intervalId = window.setInterval(() => {
-      setActiveSlide((current) =>
-        (current + 1) % slides.length
-      );
-    }, 6000);
+    const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let intervalId;
 
+    const updateAutoplay = () => {
+      window.clearInterval(intervalId);
+      if (!motionQuery.matches) {
+        intervalId = window.setInterval(() => {
+          setActiveSlide((current) => (current + 1) % slides.length);
+        }, 6000);
+      }
+    };
+
+    updateAutoplay();
+    motionQuery.addEventListener("change", updateAutoplay);
     return () => {
       window.clearInterval(intervalId);
+      motionQuery.removeEventListener("change", updateAutoplay);
     };
   }, [
     hasCarousel,
@@ -120,7 +125,7 @@ function Hero({
               style={{
                 backgroundImage: `url("${slide.image}")`,
                 backgroundPosition:
-                  slide.position ?? "center center",
+                  slide.position ?? (variant === "home" ? "center center" : undefined),
               }}
             />
           ))}

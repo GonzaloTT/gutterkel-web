@@ -13,7 +13,7 @@ const solutionOptions = [
   "Canalón continuo",
   "Cubre Pretil / Goterón",
   "Techos Falsos / Plafones",
-  "Fachada Ventilada",
+  "Sistema de Anclaje",
   "Otro",
 ];
 

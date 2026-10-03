@@ -11,7 +11,7 @@ const solutionNavLabels = {
   "canalon-continuo": "Canalón",
   "cubre-pretil": "Cubre Pretil",
   "techos-falsos": "Plafones",
-  "fachada-ventilada": "Fachada",
+  "sistema-de-anclaje": "Sistema de Anclaje",
   "aislante-termico": "Aislante",
 };
 
