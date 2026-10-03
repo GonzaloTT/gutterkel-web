@@ -554,8 +554,7 @@
 
   background-color: var(--color-background-alt);
 
-  background-image:
-    linear-gradient(
+  --solution-hero-overlay: linear-gradient(
       90deg,
       rgb(255 255 255 / 0.98) 0%,
       rgb(255 255 255 / 0.94) 30%,
@@ -563,20 +562,19 @@
       rgb(255 255 255 / 0.38) 62%,
       rgb(255 255 255 / 0.08) 78%,
       rgb(255 255 255 / 0) 100%
-    ),
-    var(--hero-background-image);
+    );
+
+  background-image: var(--solution-hero-overlay), var(--hero-background-image);
 
   background-repeat:
     no-repeat,
     no-repeat;
 
-  background-position:
-    center,
-    right 2rem center;
+  --solution-hero-position: center;
+  background-position: center, var(--solution-hero-position);
 
-  background-size:
-    cover,
-    auto 90%;
+  --solution-hero-size: cover;
+  background-size: cover, var(--solution-hero-size);
 
   border-radius:
     0
@@ -721,27 +719,25 @@
 
     margin-right: 0;
 
-    background-image:
-      linear-gradient(
+    --solution-hero-overlay: linear-gradient(
         90deg,
         rgb(255 255 255 / 0.98) 0%,
         rgb(255 255 255 / 0.9) 48%,
         rgb(255 255 255 / 0.62) 70%,
         rgb(255 255 255 / 0.3) 100%
-      ),
-      var(--hero-background-image);
+      );
+
+    background-image: var(--solution-hero-overlay), var(--hero-background-image);
 
     background-repeat:
       no-repeat,
       no-repeat;
 
-    background-position:
-      center,
-      right 1rem center;
+    --solution-hero-position: center;
+    background-position: center, var(--solution-hero-position);
 
-    background-size:
-      cover,
-      auto 92%;
+    --solution-hero-size: cover;
+    background-size: cover, var(--solution-hero-size);
 
     border-radius: 0;
   }
@@ -834,24 +830,22 @@
       var(--space-3xl)
       var(--space-2xl);
 
-    background-image:
-      linear-gradient(
+    --solution-hero-overlay: linear-gradient(
         rgb(255 255 255 / 0.86),
         rgb(255 255 255 / 0.94)
-      ),
-      var(--hero-background-image);
+      );
+
+    background-image: var(--solution-hero-overlay), var(--hero-background-image);
 
     background-repeat:
       no-repeat,
       no-repeat;
 
-    background-position:
-      center,
-      center;
+    --solution-hero-position: center;
+    background-position: center, var(--solution-hero-position);
 
-    background-size:
-      cover,
-      cover;
+    --solution-hero-size: cover;
+    background-size: cover, var(--solution-hero-size);
 
     border-radius: 0;
   }
@@ -1041,4 +1035,23 @@
 
     transition: none;
   }
+}
+
+/* Preserve the solution hero framing at each existing breakpoint. */
+.hero--solution-detail.hero--has-carousel {
+  background-image: none;
+}
+
+.hero--solution-detail .hero__carousel {
+  right: 0;
+  border-radius: inherit;
+}
+
+.hero--solution-detail .hero__carousel-slide {
+  background-position: var(--solution-hero-position);
+  background-size: var(--solution-hero-size);
+}
+
+.hero--solution-detail .hero__carousel-overlay {
+  background: var(--solution-hero-overlay);
 }
