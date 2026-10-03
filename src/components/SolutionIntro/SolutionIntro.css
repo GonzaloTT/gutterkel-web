@@ -104,3 +104,21 @@
     grid-template-columns: 1fr;
   }
 }
+/* Panoramic comparisons retain their full image, with more room toward the left. */
+.solution-intro--panoramic .solution-intro__grid {
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.4fr);
+  gap: clamp(var(--space-lg), 3vw, var(--space-2xl));
+}
+
+.solution-intro--panoramic .solution-intro__image {
+  display: block;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .solution-intro--panoramic .solution-intro__grid {
+    grid-template-columns: 1fr;
+  }
+}

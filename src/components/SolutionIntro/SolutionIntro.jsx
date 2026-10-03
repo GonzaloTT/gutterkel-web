@@ -6,9 +6,10 @@ function SolutionIntro({
   description,
   image,
   imageAlt = "",
+  imageVariant = "default",
 }) {
   return (
-    <section className="solution-intro section">
+    <section className={`solution-intro section${imageVariant === "panoramic" ? " solution-intro--panoramic" : ""}`}>
       <div className="container solution-intro__grid">
         <div className="solution-intro__content">
           {eyebrow && (

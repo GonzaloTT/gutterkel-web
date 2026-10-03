@@ -1,5 +1,6 @@
-import heroCanalon from "../assets/images/solutions/canalon/hero/hero-canalon-01.png";
-import introCanalon from "../assets/images/solutions/canalon/intro/intro-canalon-01.png";
+import heroCanalon03 from "../assets/images/solutions/canalon/hero/hero-canalon-03.png";
+import heroCanalon02 from "../assets/images/solutions/canalon/hero/hero-canalon-02.png";
+import introCanalon from "../assets/images/solutions/canalon/intro/intro-canalon-02.png";
 import mobileProfilerImage from "../assets/images/solutions/canalon/mobile-profiler/mobile-profiler-01.png";
 
 import partPerfil from "../assets/images/solutions/canalon/parts/part-perfil.png";
@@ -15,13 +16,16 @@ import fixingSeparadorZ from "../assets/images/solutions/canalon/fixing-systems/
 import fixingSoporteUral from "../assets/images/solutions/canalon/fixing-systems/fixing-soporte-ural.png";
 import fixingGanchoNieve from "../assets/images/solutions/canalon/fixing-systems/fixing-gancho-nieve.png";
 
-import heroCubrePretil from "../assets/images/solutions/cubre-pretil/card-cubre-pretil.png";
-import introCubrePretil from "../assets/images/solutions/cubre-pretil/intro/intro-cubre-pretil-01.png";
+import heroCubrePretil from "../assets/images/solutions/cubre-pretil/hero/hero-cubre-pretil-02.png";
+import heroCubrePretil03 from "../assets/images/solutions/cubre-pretil/hero/hero-cubre-pretil-03.jpeg";
+import introCubrePretil from "../assets/images/solutions/cubre-pretil/intro/intro-cubre-pretil-02.png";
 
-import heroTechosFalsos from "../assets/images/solutions/techos-falsos/card-techos-falsos.png";
+import heroTechosFalsos from "../assets/images/solutions/techos-falsos/hero/hero-plafones-04.jpg";
+import heroTechosFalsos03 from "../assets/images/solutions/techos-falsos/hero/hero-plafones-03.jpeg";
 import introTechosFalsos from "../assets/images/solutions/techos-falsos/intro/intro-techos-falsos-01.png";
 
-import heroFachadaVentilada from "../assets/images/solutions/fachada-ventilada/card-fachada-ventilada.png";
+import heroSistemaAnclaje from "../assets/images/solutions/sistema-anclaje/hero/hero-sistema-anclaje-02.jpeg";
+import heroSistemaAnclaje03 from "../assets/images/solutions/sistema-anclaje/hero/hero-sistema-anclaje-03.png";
 import introFachadaVentilada from "../assets/images/solutions/techos-falsos/intro/intro-techos-falsos-01.png";
 import facadeElementsImage from "../assets/images/solutions/fachada-ventilada/elements/facade-elements-01.png";
 
@@ -39,7 +43,7 @@ const solutionDetails = {
     description:
         "Sistema de canalización pluvial fabricado a medida para adaptarse a las características de cada proyecto y ofrecer una integración limpia, funcional y duradera.",
 
-    heroImage: heroCanalon,
+    heroSlides: [{ image: heroCanalon02 }, { image: heroCanalon03 }],
 
     intro: {
         eyebrow: "¿Qué es esta solución?",
@@ -210,7 +214,7 @@ const solutionDetails = {
     description:
         "Sistema diseñado para proteger remates, pretiles y bordes expuestos frente al agua, los escurrimientos y el deterioro asociado a la humedad.",
 
-    heroImage: heroCubrePretil,
+    heroSlides: [{ image: heroCubrePretil }, { image: heroCubrePretil03 }],
 
     intro: {
         eyebrow: "¿Qué es esta solución?",
@@ -222,6 +226,7 @@ const solutionDetails = {
         "El sistema de Cubre Pretil y Goterón se utiliza para proteger zonas superiores y bordes de la construcción, ayudando a controlar el escurrimiento del agua y a reducir el contacto directo de la humedad con elementos arquitectónicos sensibles.",
 
         image: introCubrePretil,
+        imageVariant: "panoramic",
     },
 
     features: [
@@ -281,7 +286,7 @@ const solutionDetails = {
     description:
         "Solución arquitectónica para crear acabados interiores limpios y funcionales, permitiendo ocultar instalaciones y mejorar la integración visual de distintos espacios.",
 
-    heroImage: heroTechosFalsos,
+    heroSlides: [{ image: heroTechosFalsos }, { image: heroTechosFalsos03 }],
 
     intro: {
         eyebrow: "¿Qué es esta solución?",
@@ -342,17 +347,17 @@ const solutionDetails = {
     ],
   },
 
-  "fachada-ventilada": {
-    slug: "fachada-ventilada",
+  "sistema-de-anclaje": {
+    slug: "sistema-de-anclaje",
 
     category: "Envolvente arquitectónica",
 
-    title: "Fachada Ventilada",
+    title: "Sistema de Anclaje",
 
     description:
         "Sistema de envolvente arquitectónica que incorpora una cámara de aire entre el revestimiento exterior y el cerramiento del edificio, permitiendo una solución técnica y estética adaptable a distintos proyectos.",
 
-    heroImage: heroFachadaVentilada,
+    heroSlides: [{ image: heroSistemaAnclaje }, { image: heroSistemaAnclaje03 }],
 
     intro: {
         eyebrow: "¿Qué es esta solución?",
@@ -361,7 +366,7 @@ const solutionDetails = {
         "Un sistema de fachada con cámara de aire y revestimiento exterior",
 
         description:
-        "La fachada ventilada está compuesta por diferentes capas que trabajan en conjunto para crear una envolvente exterior separada del cerramiento principal del edificio. Entre ambas superficies se genera una cámara de aire que forma parte del funcionamiento del sistema.",
+        "El Sistema de Anclaje está compuesto por diferentes capas que trabajan en conjunto para crear una envolvente exterior separada del cerramiento principal del edificio. Entre ambas superficies se genera una cámara de aire que forma parte del funcionamiento del sistema.",
 
         image: introFachadaVentilada,
     },
@@ -415,10 +420,10 @@ const solutionDetails = {
     facadeElements: {
         eyebrow: "Composición del sistema",
 
-        title: "Elementos de una fachada ventilada",
+        title: "Elementos del Sistema de Anclaje",
 
         description:
-        "Una fachada ventilada se compone de diferentes elementos que trabajan conjuntamente para formar la envolvente exterior del edificio.",
+        "El Sistema de Anclaje se compone de diferentes elementos que trabajan conjuntamente para formar la envolvente exterior del edificio.",
 
         image: facadeElementsImage,
 
