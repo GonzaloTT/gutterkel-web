@@ -357,7 +357,10 @@ const solutionDetails = {
     description:
         "Sistema de envolvente arquitectónica que incorpora una cámara de aire entre el revestimiento exterior y el cerramiento del edificio, permitiendo una solución técnica y estética adaptable a distintos proyectos.",
 
-    heroSlides: [{ image: heroSistemaAnclaje }, { image: heroSistemaAnclaje03 }],
+    heroSlides: [
+      { image: heroSistemaAnclaje, mobilePosition: "80% center" },
+      { image: heroSistemaAnclaje03 },
+    ],
 
     intro: {
         eyebrow: "¿Qué es esta solución?",

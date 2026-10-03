@@ -165,7 +165,7 @@
   opacity: 0;
 
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: var(--hero-slide-position, center center);
   background-size: cover;
 
   transform: scale(1.015);
@@ -805,8 +805,9 @@
 
     background-image:
       linear-gradient(
-        rgb(255 255 255 / 0.88),
-        rgb(255 255 255 / 0.94)
+        rgb(255 255 255 / 0.72) 0%,
+        rgb(255 255 255 / 0.72) 65%,
+        rgb(255 255 255 / 0.58) 100%
       ),
       var(--hero-background-image);
 
@@ -831,8 +832,9 @@
       var(--space-2xl);
 
     --solution-hero-overlay: linear-gradient(
-        rgb(255 255 255 / 0.86),
-        rgb(255 255 255 / 0.94)
+        rgb(255 255 255 / 0.72) 0%,
+        rgb(255 255 255 / 0.72) 65%,
+        rgb(255 255 255 / 0.58) 100%
       );
 
     background-image: var(--solution-hero-overlay), var(--hero-background-image);
@@ -893,6 +895,7 @@
     max-width: 100%;
 
     font-size: 1rem;
+    color: var(--color-text);
   }
 
   .hero__actions {
@@ -1009,8 +1012,9 @@
   .hero__carousel-overlay {
     background:
       linear-gradient(
-        rgb(255 255 255 / 0.88),
-        rgb(255 255 255 / 0.94)
+        rgb(255 255 255 / 0.72) 0%,
+        rgb(255 255 255 / 0.72) 65%,
+        rgb(255 255 255 / 0.58) 100%
       );
   }
 
@@ -1048,10 +1052,17 @@
 }
 
 .hero--solution-detail .hero__carousel-slide {
-  background-position: var(--solution-hero-position);
+  background-position: var(--hero-slide-position, var(--solution-hero-position));
   background-size: var(--solution-hero-size);
 }
 
 .hero--solution-detail .hero__carousel-overlay {
   background: var(--solution-hero-overlay);
+}
+
+@media (max-width: 650px) {
+  .hero--home .hero__carousel-slide,
+  .hero--solution-detail .hero__carousel-slide {
+    background-position: var(--hero-slide-mobile-position, center center);
+  }
 }

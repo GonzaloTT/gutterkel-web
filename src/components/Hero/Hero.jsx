@@ -124,8 +124,8 @@ function Hero({
               }`}
               style={{
                 backgroundImage: `url("${slide.image}")`,
-                backgroundPosition:
-                  slide.position ?? (variant === "home" ? "center center" : undefined),
+                "--hero-slide-position": slide.position,
+                "--hero-slide-mobile-position": slide.mobilePosition ?? "center center",
               }}
             />
           ))}
