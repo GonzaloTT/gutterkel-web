@@ -1,3 +1,10 @@
+import { emptyContactForm } from "../utils/formValidation.js";
+
+// Rehearsal and failed submissions must never discard the customer's draft.
+export function contactValuesAfterSubmit(values, response) {
+  return response.success === true && !response.preview ? emptyContactForm : values;
+}
+
 // Same-origin endpoint works with Pages local/preview and the optional Vite proxy.
 export async function submitContact(payload, { fetchImpl = fetch } = {}) {
   const controller = new AbortController();

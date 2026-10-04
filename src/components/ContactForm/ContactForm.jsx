@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { emptyContactForm, fieldLimits, solutionOptions, validateContactPayload } from "../../utils/formValidation";
-import { submitContact } from "../../services/contact";
+import { contactValuesAfterSubmit, submitContact } from "../../services/contact";
+import Turnstile from "../Turnstile/Turnstile";
 
 import {
   ArrowRightIcon,
@@ -18,6 +19,8 @@ function ContactForm() {
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState("idle");
   const [message, setMessage] = useState("");
+  const [turnstileToken, setTurnstileToken] = useState("");
+  const turnstileRef = useRef(null);
   const submitting = useRef(false);
   const formRef = useRef(null);
   const feedbackRef = useRef(null);
@@ -68,11 +71,9 @@ function ContactForm() {
       focusFeedback(result.errors);
       return;
     }
-    // Future Turnstile widget callback supplies a real token; never invent one.
-    // Fail closed if someone enables a site key before the widget is implemented.
-    if (import.meta.env.VITE_TURNSTILE_SITE_KEY) {
+    if (!turnstileToken) {
       setStatus("error");
-      setMessage("La verificación de seguridad todavía no está disponible. Utiliza otro medio de contacto.");
+      setMessage("Completa la verificación de seguridad antes de enviar. Si no está disponible, utiliza otro medio de contacto.");
       focusFeedback({});
       return;
     }
@@ -80,7 +81,7 @@ function ContactForm() {
     setStatus("submitting");
     setMessage("Procesando tu solicitud…");
     try {
-      const response = await submitContact({ ...result.data, turnstileToken: "" });
+      const response = await submitContact({ ...result.data, turnstileToken });
       const nextErrors = {};
       for (const [name, error] of Object.entries(response.errors || {})) {
         if (Object.hasOwn(values, name) && typeof error === "string") nextErrors[name] = error;
@@ -89,9 +90,11 @@ function ContactForm() {
       setStatus(response.success ? "success" : "error");
       setMessage(response.message);
       // A rehearsal is not delivery: preserve values so the user can contact us.
-      if (response.success && !response.preview) setValues(emptyContactForm);
+      setValues((current) => contactValuesAfterSubmit(current, response));
       focusFeedback(nextErrors);
     } finally {
+      setTurnstileToken("");
+      turnstileRef.current?.reset();
       submitting.current = false;
     }
   }
@@ -331,6 +334,9 @@ function ContactForm() {
         </div>
           {fieldError("details")}
       </div>
+
+      <Turnstile ref={turnstileRef} siteKey={import.meta.env.VITE_TURNSTILE_SITE_KEY}
+        onToken={setTurnstileToken} />
 
       <button
         type="submit"

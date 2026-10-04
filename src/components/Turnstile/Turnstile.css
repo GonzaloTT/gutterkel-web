@@ -1,0 +1,27 @@
+.contact-turnstile {
+  margin-top: var(--space-lg);
+  min-width: 0;
+}
+
+.contact-turnstile p {
+  margin-top: var(--space-sm);
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.contact-turnstile button {
+  margin-top: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-background-alt);
+  color: var(--color-text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.contact-turnstile button:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
