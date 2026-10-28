@@ -62,3 +62,12 @@
 
   transform: translateY(-1px);
 }
+.solution-detail-industrial h2,
+.solution-detail-industrial p {
+  margin-bottom: var(--space-lg);
+}
+
+.solution-detail-industrial p {
+  max-width: 850px;
+  line-height: 1.6;
+}

@@ -10,10 +10,7 @@ import partBajante from "../assets/images/solutions/canalon/parts/part-bajante.p
 import partTapa from "../assets/images/solutions/canalon/parts/part-tapa.png";
 
 import fixingCornisa from "../assets/images/solutions/canalon/fixing-systems/fixing-cornisa.png";
-import fixingPicoCanalon from "../assets/images/solutions/canalon/fixing-systems/fixing-pico-canalon.png";
-import fixingSeparador from "../assets/images/solutions/canalon/fixing-systems/fixing-separador.png";
 import fixingSeparadorZ from "../assets/images/solutions/canalon/fixing-systems/fixing-separador-z.png";
-import fixingSoporteUral from "../assets/images/solutions/canalon/fixing-systems/fixing-soporte-ural.png";
 import fixingGanchoNieve from "../assets/images/solutions/canalon/fixing-systems/fixing-gancho-nieve.png";
 
 import heroCubrePretil from "../assets/images/solutions/cubre-pretil/hero/hero-cubre-pretil-02.png";
@@ -22,18 +19,29 @@ import introCubrePretil from "../assets/images/solutions/cubre-pretil/intro/intr
 
 import heroTechosFalsos from "../assets/images/solutions/techos-falsos/hero/hero-plafones-04.jpg";
 import heroTechosFalsos03 from "../assets/images/solutions/techos-falsos/hero/hero-plafones-03.jpeg";
-import introTechosFalsos from "../assets/images/solutions/techos-falsos/intro/intro-techos-falsos-01.png";
 
 import heroSistemaAnclaje from "../assets/images/solutions/sistema-anclaje/hero/hero-sistema-anclaje-02.jpeg";
 import heroSistemaAnclaje03 from "../assets/images/solutions/sistema-anclaje/hero/hero-sistema-anclaje-03.png";
 import introFachadaVentilada from "../assets/images/solutions/techos-falsos/intro/intro-techos-falsos-01.png";
 import facadeElementsImage from "../assets/images/solutions/fachada-ventilada/elements/facade-elements-01.png";
 
-import heroAislanteTermico from "../assets/images/solutions/aislante-termico/hero/hero-aislante-termico-01.png";
-import introAislanteTermico from "../assets/images/solutions/aislante-termico/intro/intro-aislante-termico-01.png";
 
 const solutionDetails = {
   "canalon-continuo": {
+    industrial: {
+        "title": "Canalón Industrial",
+        "description": "También disponemos de canalón industrial de aluminio para naves industriales, centros comerciales y edificios con cubiertas extensas. Se fabrica a medida según las dimensiones y el caudal requerido para resolver grandes capacidades de desagüe. Se suministra en tramos estándar de 3 metros, con longitudes mayores bajo proyecto.",
+        "technicalSheet": {
+            "label": "Descargar ficha de Canalón Industrial",
+            "href": "/fichas-tecnicas/gutterkel-canalon-industrial.pdf"
+        }
+    },
+
+    technicalSheet: {
+      label: "Descargar ficha técnica",
+      href: "/fichas-tecnicas/gutterkel-canalon-aluminio.pdf",
+    },
+
     slug: "canalon-continuo",
 
     category: "Evacuación pluvial",
@@ -41,7 +49,7 @@ const solutionDetails = {
     title: "Sistemas de Canalón Continuo de Aluminio",
 
     description:
-        "Sistema de canalización pluvial fabricado a medida para adaptarse a las características de cada proyecto y ofrecer una integración limpia, funcional y duradera.",
+        "Canalón continuo de aluminio lacado, fabricado de una sola pieza, sin juntas ni soldaduras y adaptado a las dimensiones de la obra.",
 
     heroSlides: [{ image: heroCanalon02 }, { image: heroCanalon03 }],
 
@@ -50,54 +58,46 @@ const solutionDetails = {
         title:
         "Canalización pluvial fabricada a medida para cada proyecto",
         description:
-        "El canalón continuo se fabrica de acuerdo con las dimensiones reales de la obra, permitiendo reducir uniones visibles y adaptar el sistema a las necesidades arquitectónicas de cada construcción.",
+        "El perfilado en continuo permite fabricar el canalón a medida de la obra. El sistema combina aluminio de primera fusión, lacado y componentes de evacuación pluvial para conducir el agua desde la cubierta.",
         image: introCanalon,
     },
 
     features: [
         {
-        title: "Fabricación a medida",
-        description:
-            "Cada sistema se adapta a las dimensiones y condiciones específicas del proyecto.",
+            "title": "Aluminio de primera fusión",
+            "description": "Aluminio lacado con acabados de poliéster o poliamida para uso exterior."
         },
         {
-        title: "Diseño continuo",
-        description:
-            "La configuración continua ayuda a reducir uniones visibles y mejorar el acabado final.",
+            "title": "Una sola pieza",
+            "description": "Perfilado continuo sin juntas ni soldaduras en el canalón."
         },
         {
-        title: "Integración arquitectónica",
-        description:
-            "Se diseña para integrarse de forma discreta con diferentes tipos de fachadas y cubiertas.",
+            "title": "Fabricación adaptada a obra",
+            "description": "El canalón se configura según las dimensiones de la cubierta y las necesidades del proyecto."
         },
         {
-        title: "Aplicaciones diversas",
-        description:
-            "Puede implementarse en proyectos residenciales, comerciales e industriales.",
-        },
+            "title": "Variedad de acabados",
+            "description": "Colores de línea: marrón, pizarra, arena, ocre y blanco; otras opciones en la ficha técnica."
+        }
     ],
 
     advantages: [
         {
-        title: "Acabado limpio",
-        description:
-            "El sistema busca mantener una apariencia uniforme y ordenada en la fachada.",
+            "title": "Resistencia",
+            "description": "La forma del perfil y la continuidad del canalón aportan solidez al sistema."
         },
         {
-        title: "Adaptación al proyecto",
-        description:
-            "La solución se configura de acuerdo con las necesidades reales de cada obra.",
+            "title": "Estanqueidad",
+            "description": "Codos y tapas se sellan con poliuretano para mantener la estanqueidad de las conexiones."
         },
         {
-        title: "Instalación especializada",
-        description:
-            "El montaje se realiza considerando geometría, ubicación y condiciones específicas.",
+            "title": "Integración en la fachada",
+            "description": "El perfil en forma de cornisa se adapta a diferentes obras y edificaciones."
         },
         {
-        title: "Protección pluvial",
-        description:
-            "Ayuda a conducir correctamente el agua y reducir escurrimientos sobre fachadas.",
-        },
+            "title": "Sistema completo",
+            "description": "Bajantes, nacimientos, codos, tapas y accesorios completan la conducción del agua pluvial."
+        }
     ],
 
     mobileProfiler: {
@@ -171,33 +171,15 @@ const solutionDetails = {
             image: fixingCornisa,
             },
             {
-            name: "Gancho pico canalón",
-            description:
-                "Sistema de soporte adaptado a determinadas geometrías de cubierta.",
-            image: fixingPicoCanalon,
-            },
-            {
-            name: "Gancho separador",
-            description:
-                "Permite mantener una separación controlada entre el canalón y el elemento de soporte.",
-            image: fixingSeparador,
-            },
-            {
             name: "Gancho separador tipo Z",
             description:
-                "Alternativa de fijación para configuraciones donde se requiere mayor desplazamiento respecto al soporte.",
+                "Soporte separador en Z para fijar el canalón separado del punto de apoyo.",
             image: fixingSeparadorZ,
-            },
-            {
-            name: "Soporte mural",
-            description:
-                "Configuración diseñada para fijación directa sobre elementos verticales.",
-            image: fixingSoporteUral,
             },
             {
             name: "Gancho de nieve",
             description:
-                "Configuración específica para determinados escenarios de cubierta y soporte.",
+                "Fijación del canalón mediante gancho de nieve, según las condiciones de la cubierta.",
             image: fixingGanchoNieve,
             },
         ],
@@ -205,6 +187,11 @@ const solutionDetails = {
    },
 
   "cubre-pretil": {
+    technicalSheet: {
+      label: "Descargar ficha técnica",
+      href: "/fichas-tecnicas/gutterkel-cubrepretil.pdf",
+    },
+
     slug: "cubre-pretil",
 
     category: "Protección arquitectónica",
@@ -212,7 +199,7 @@ const solutionDetails = {
     title: "Cubre Pretil y Goterón",
 
     description:
-        "Sistema diseñado para proteger remates, pretiles y bordes expuestos frente al agua, los escurrimientos y el deterioro asociado a la humedad.",
+        "Cubrepretil de aluminio lacado, perfilado en continuo y a medida en obra para proteger petos, muros y remates con un diseño anti-goteo.",
 
     heroSlides: [{ image: heroCubrePretil }, { image: heroCubrePretil03 }],
 
@@ -223,7 +210,7 @@ const solutionDetails = {
         "Protección arquitectónica para remates y bordes expuestos",
 
         description:
-        "El sistema de Cubre Pretil y Goterón se utiliza para proteger zonas superiores y bordes de la construcción, ayudando a controlar el escurrimiento del agua y a reducir el contacto directo de la humedad con elementos arquitectónicos sensibles.",
+        "El cubrepretil se fabrica directamente en obra en una sola pieza. Su perfil se encaja sobre ganchos regulables anclados al muro, con fijación oculta y sin perforaciones en el perfil.",
 
         image: introCubrePretil,
         imageVariant: "panoramic",
@@ -231,60 +218,57 @@ const solutionDetails = {
 
     features: [
         {
-        title: "Protección perimetral",
-        description:
-            "Ayuda a proteger pretiles, remates y bordes superiores frente a la exposición al agua.",
+            "title": "Fabricación en continuo",
+            "description": "Perfilado a medida en obra para lograr continuidad sin empalmes."
         },
         {
-        title: "Control de escurrimientos",
-        description:
-            "Su configuración favorece una conducción más controlada del agua en zonas expuestas.",
+            "title": "Fijación oculta",
+            "description": "Ganchos regulables sujetan el perfil sin necesidad de perforarlo."
         },
         {
-        title: "Fabricación adaptable",
-        description:
-            "Puede ajustarse a las dimensiones y geometría requeridas por cada proyecto.",
+            "title": "Diseño anti-goteo",
+            "description": "Los bordes inferiores en forma de Z alejan el agua de los muros y fachadas."
         },
         {
-        title: "Integración arquitectónica",
-        description:
-            "Se incorpora al diseño de la fachada buscando mantener un acabado limpio y funcional.",
-        },
+            "title": "Aluminio lacado",
+            "description": "Aluminio de primera fusión con variedad de colores y acabados."
+        }
     ],
 
     advantages: [
         {
-        title: "Mayor protección",
-        description:
-            "Ayuda a reducir la exposición directa de remates y bordes a condiciones de humedad.",
+            "title": "Petos y antepechos",
+            "description": "Remate y protección de azoteas y cubiertas planas."
         },
         {
-        title: "Acabado discreto",
-        description:
-            "Puede integrarse de forma visualmente ordenada con distintos estilos arquitectónicos.",
+            "title": "Muros y fachadas",
+            "description": "La continuidad del perfil ayuda a evitar humedades en uniones y empalmes."
         },
         {
-        title: "Adaptación al proyecto",
-        description:
-            "La solución se configura según las características constructivas específicas de cada obra.",
+            "title": "Cornisas y barandales",
+            "description": "Acabado continuo que se adapta a la geometría del proyecto."
         },
         {
-        title: "Aplicación versátil",
-        description:
-            "Puede utilizarse en distintos tipos de proyectos residenciales, comerciales y arquitectónicos.",
-        },
+            "title": "Acabados a elegir",
+            "description": "Colores de línea: marrón, pizarra, arena, negro mate y blanco."
+        }
     ],
   },
 
   "techos-falsos": {
+    technicalSheet: {
+      label: "Descargar ficha técnica",
+      href: "/fichas-tecnicas/gutterkel-falso-plafon.pdf",
+    },
+
     slug: "techos-falsos",
 
-    category: "Soluciones interiores",
+    category: "Acabados interiores y exteriores",
 
     title: "Techos Falsos y Plafones",
 
     description:
-        "Solución arquitectónica para crear acabados interiores limpios y funcionales, permitiendo ocultar instalaciones y mejorar la integración visual de distintos espacios.",
+        "Falso plafón de aluminio lacado para interiores y exteriores, con lamas ligeras y desmontables que facilitan la integración de iluminación y ventilación.",
 
     heroSlides: [{ image: heroTechosFalsos }, { image: heroTechosFalsos03 }],
 
@@ -292,62 +276,59 @@ const solutionDetails = {
         eyebrow: "¿Qué es esta solución?",
 
         title:
-        "Una solución funcional para integrar y ordenar espacios interiores",
+        "Techos de aluminio para interiores y exteriores",
 
         description:
-        "Los techos falsos y plafones permiten crear una superficie secundaria debajo de la estructura principal del techo. Esto facilita la integración visual de instalaciones, luminarias y otros elementos técnicos, al mismo tiempo que contribuye a mantener un acabado interior más uniforme y ordenado.",
+        "El sistema de lamas de aluminio forma techos lineales y permite acceder a las instalaciones cubiertas. Se utiliza en obra nueva y rehabilitación, tanto en interiores como en porches, marquesinas y cornisas.",
 
-        image: introTechosFalsos,
+        image: heroTechosFalsos,
     },
 
     features: [
         {
-        title: "Integración de instalaciones",
-        description:
-            "Permite ocultar o integrar visualmente cableado, luminarias, ductos y otros elementos técnicos.",
+            "title": "Aluminio lacado",
+            "description": "Lamas ligeras, consistentes y resistentes a la corrosión."
         },
         {
-        title: "Acabado uniforme",
-        description:
-            "Ayuda a crear superficies interiores más limpias, continuas y visualmente ordenadas.",
+            "title": "Iluminación y ventilación",
+            "description": "El sistema facilita la integración de luminarias y sistemas de ventilación."
         },
         {
-        title: "Diseño adaptable",
-        description:
-            "Puede configurarse de acuerdo con las dimensiones, geometría y necesidades estéticas del espacio.",
+            "title": "Lamas desmontables",
+            "description": "Permiten acceder a las instalaciones y elementos situados sobre el plafón."
         },
         {
-        title: "Aplicación arquitectónica",
-        description:
-            "Puede utilizarse en distintos entornos residenciales, comerciales, corporativos e institucionales.",
-        },
+            "title": "Serie TE",
+            "description": "Lamas rectangulares de encaje para techos lineales cerrados, con acabados Roble, Nogal y Cerezo."
+        }
     ],
 
     advantages: [
         {
-        title: "Mejor integración visual",
-        description:
-            "Ayuda a reducir la presencia visual de instalaciones y elementos técnicos dentro del espacio.",
+            "title": "Montaje sencillo",
+            "description": "Instalación rápida y limpia mediante perfiles, lamas y remates perimetrales."
         },
         {
-        title: "Flexibilidad de diseño",
-        description:
-            "Permite adaptar la solución a diferentes conceptos arquitectónicos y configuraciones interiores.",
+            "title": "Uso interior y exterior",
+            "description": "Aplicable en baños, cocinas, porches y marquesinas, entre otros espacios."
         },
         {
-        title: "Acceso organizado",
-        description:
-            "Dependiendo de la configuración utilizada, puede facilitar el acceso a instalaciones ubicadas en la parte superior.",
+            "title": "Facilidad de limpieza",
+            "description": "La superficie uniforme de la Serie TE facilita la higiene y el mantenimiento."
         },
         {
-        title: "Espacios más ordenados",
-        description:
-            "Contribuye a mantener una apariencia interior más limpia y profesional.",
-        },
+            "title": "Material reciclable",
+            "description": "El sistema se fabrica con materiales reciclables y resistentes a la corrosión."
+        }
     ],
   },
 
   "sistema-de-anclaje": {
+    technicalSheet: {
+      label: "Descargar ficha técnica",
+      href: "/fichas-tecnicas/gutterkel-sistema-anclaje.pdf",
+    },
+
     slug: "sistema-de-anclaje",
 
     category: "Envolvente arquitectónica",
@@ -355,7 +336,7 @@ const solutionDetails = {
     title: "Sistema de Anclaje",
 
     description:
-        "Sistema de envolvente arquitectónica que incorpora una cámara de aire entre el revestimiento exterior y el cerramiento del edificio, permitiendo una solución técnica y estética adaptable a distintos proyectos.",
+        "Sistema de anclaje para fachadas ventiladas: une el revestimiento exterior al muro portante e integra una cámara de aire y aislamiento térmico.",
 
     heroSlides: [
       { image: heroSistemaAnclaje, mobilePosition: "80% center" },
@@ -369,55 +350,47 @@ const solutionDetails = {
         "Un sistema de fachada con cámara de aire y revestimiento exterior",
 
         description:
-        "El Sistema de Anclaje está compuesto por diferentes capas que trabajan en conjunto para crear una envolvente exterior separada del cerramiento principal del edificio. Entre ambas superficies se genera una cámara de aire que forma parte del funcionamiento del sistema.",
+        "El anclaje sujeta el revestimiento exterior y transmite sus cargas al muro portante. La cámara de aire permite la circulación y evacuación de humedad, mientras el aislamiento térmico forma parte de la envolvente.",
 
         image: introFachadaVentilada,
     },
 
     features: [
         {
-        title: "Sistema multicapa",
-        description:
-            "Integra revestimiento, estructura de soporte, cámara de aire, aislamiento y cerramiento dentro de una misma solución.",
+            "title": "Escuadras de nivelación",
+            "description": "Fijan los perfiles al muro o forjado y permiten nivelarlos y aplomarlos durante el montaje."
         },
         {
-        title: "Cámara de aire",
-        description:
-            "Incorpora una separación entre el revestimiento exterior y el cerramiento principal del edificio.",
+            "title": "Escuadras de retención",
+            "description": "Actúan en apoyos intermedios para limitar la flexión del perfil por efecto del viento."
         },
         {
-        title: "Diseño adaptable",
-        description:
-            "Puede configurarse de acuerdo con las dimensiones, geometría y características arquitectónicas del proyecto.",
+            "title": "Perfiles de aluminio",
+            "description": "Perfiles de las series T y L conforman la estructura de soporte del revestimiento."
         },
         {
-        title: "Integración de revestimientos",
-        description:
-            "Permite incorporar diferentes acabados exteriores dependiendo de la solución especificada para cada obra.",
-        },
+            "title": "Grapas de fijación",
+            "description": "Piezas de acero inoxidable para sujetar el revestimiento dentro del sistema de anclaje."
+        }
     ],
 
     advantages: [
         {
-        title: "Protección de la envolvente",
-        description:
-            "El revestimiento exterior ayuda a reducir la exposición directa del cerramiento principal a las condiciones ambientales.",
+            "title": "Instalación en seco",
+            "description": "El montaje prescinde del sistema tradicional de mortero y facilita la limpieza de obra."
         },
         {
-        title: "Integración arquitectónica",
-        description:
-            "Permite desarrollar fachadas con diferentes acabados, modulaciones y configuraciones visuales.",
+            "title": "Mantenimiento del revestimiento",
+            "description": "Permite la eventual sustitución de piezas sin afectar al resto de la fachada."
         },
         {
-        title: "Solución técnica adaptable",
-        description:
-            "El sistema puede ajustarse a las características constructivas y necesidades específicas de cada proyecto.",
+            "title": "Cámara de aire",
+            "description": "La circulación del aire favorece la evacuación de humedad y reduce la acumulación de calor."
         },
         {
-        title: "Organización por capas",
-        description:
-            "La composición del sistema permite separar claramente las distintas funciones de la envolvente arquitectónica.",
-        },
+            "title": "Aislamiento integrado",
+            "description": "El aislamiento térmico forma parte del sistema de fachada ventilada."
+        }
     ],
 
     facadeElements: {
@@ -447,89 +420,19 @@ const solutionDetails = {
             "Espacio existente entre el revestimiento exterior y las capas interiores del sistema.",
         },
         {
-            name: "Aislamiento",
+            name: "Aislamiento térmico",
             description:
             "Capa incorporada en la envolvente para complementar el desempeño térmico del sistema.",
         },
         {
-            name: "Cerramiento interior",
+            name: "Muro portante",
             description:
-            "Elemento constructivo que delimita el edificio y funciona como base interior de la envolvente.",
+            "Estructura sobre la que se instala el sistema y a la que se transmiten las cargas del revestimiento.",
         },
         ],
     },
   },
 
-  "aislante-termico": {
-    slug: "aislante-termico",
-
-    category: "Eficiencia de envolvente",
-
-    title: "Aislante Térmico",
-
-    description:
-        "Solución orientada a complementar el desempeño térmico de cubiertas, fachadas y otros elementos constructivos mediante la incorporación de materiales aislantes adecuados a cada proyecto.",
-
-    heroImage: heroAislanteTermico,
-
-    intro: {
-        eyebrow: "¿Qué es esta solución?",
-
-        title:
-        "Aislamiento aplicado a la envolvente del edificio",
-
-        description:
-        "El aislamiento térmico se incorpora en distintos elementos constructivos con el objetivo de reducir la transferencia de calor entre el interior y el exterior. Su selección y configuración dependen del tipo de sistema, las condiciones del proyecto y las necesidades específicas de cada obra.",
-
-        image: introAislanteTermico,
-    },
-
-    features: [
-        {
-        title: "Aplicación en envolventes",
-        description:
-            "Puede integrarse en cubiertas, fachadas y otros sistemas constructivos según las características del proyecto.",
-        },
-        {
-        title: "Solución adaptable",
-        description:
-            "La configuración del aislamiento puede ajustarse al sistema constructivo y a las necesidades particulares de cada obra.",
-        },
-        {
-        title: "Integración con otros sistemas",
-        description:
-            "Puede formar parte de soluciones más amplias de fachada, cubierta o cerramiento.",
-        },
-        {
-        title: "Selección según proyecto",
-        description:
-            "El tipo de material y su disposición se determinan considerando las condiciones constructivas y de uso del edificio.",
-        },
-    ],
-
-    advantages: [
-        {
-        title: "Mejor control térmico",
-        description:
-            "Contribuye a reducir el intercambio de calor a través de los elementos donde se encuentra instalado.",
-        },
-        {
-        title: "Mayor confort interior",
-        description:
-            "Puede ayudar a mantener condiciones interiores más estables cuando se integra correctamente dentro del sistema constructivo.",
-        },
-        {
-        title: "Compatibilidad constructiva",
-        description:
-            "Puede combinarse con diferentes soluciones de fachada, cubierta y cerramiento.",
-        },
-        {
-        title: "Adaptación técnica",
-        description:
-            "La solución puede definirse de acuerdo con la geometría, materiales y requerimientos específicos del proyecto.",
-        },
-    ],
-  },
 };
 
 export default solutionDetails;

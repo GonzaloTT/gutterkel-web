@@ -1,3 +1,4 @@
+import TechnicalSheetDownload from "../TechnicalSheetDownload/TechnicalSheetDownload";
 import "./SolutionIntro.css";
 
 function SolutionIntro({
@@ -7,6 +8,7 @@ function SolutionIntro({
   image,
   imageAlt = "",
   imageVariant = "default",
+  technicalSheet,
 }) {
   return (
     <section className={`solution-intro section${imageVariant === "panoramic" ? " solution-intro--panoramic" : ""}`}>
@@ -25,6 +27,10 @@ function SolutionIntro({
           <p className="solution-intro__description">
             {description}
           </p>
+          <TechnicalSheetDownload
+            technicalSheet={technicalSheet}
+            className="solution-intro__download"
+          />
         </div>
 
         <div className="solution-intro__media">

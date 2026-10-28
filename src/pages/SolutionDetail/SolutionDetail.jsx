@@ -10,6 +10,7 @@ import MobileProfiler from "../../components/MobileProfiler/MobileProfiler";
 import GutterParts from "../../components/GutterParts/GutterParts";
 import FixingSystems from "../../components/FixingSystems/FixingSystems";
 import FacadeElements from "../../components/FacadeElements/FacadeElements";
+import TechnicalSheetDownload from "../../components/TechnicalSheetDownload/TechnicalSheetDownload";
 
 import solutionDetails from "../../data/solutionDetails";
 
@@ -93,6 +94,7 @@ function SolutionDetail() {
         <SolutionIntro
           {...solution.intro}
           imageAlt={solution.title}
+          technicalSheet={solution.technicalSheet}
         />
       )}
 
@@ -134,6 +136,16 @@ function SolutionDetail() {
         <FixingSystems
             {...solution.fixingSystems}
         />
+      )}
+
+      {solution.industrial && (
+        <section className="solution-detail-industrial section" aria-labelledby="industrial-title">
+          <div className="container">
+            <h2 id="industrial-title">{solution.industrial.title}</h2>
+            <p>{solution.industrial.description}</p>
+            <TechnicalSheetDownload technicalSheet={solution.industrial.technicalSheet} />
+          </div>
+        </section>
       )}
 
       <CTASection

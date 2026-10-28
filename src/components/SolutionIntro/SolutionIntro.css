@@ -122,3 +122,6 @@
     grid-template-columns: 1fr;
   }
 }
+.solution-intro__download {
+  margin-top: var(--space-lg);
+}
