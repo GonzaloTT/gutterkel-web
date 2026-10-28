@@ -93,7 +93,7 @@ function Contact() {
               </div>
 
               <p className="contact-card__value">
-                {contact.phoneDisplay}
+                {contact.whatsappDisplay}
               </p>
 
               <p className="contact-card__description">
@@ -125,7 +125,7 @@ function Contact() {
                   </span>
 
                   <h2 className="contact-card__title">
-                    Habla con nuestro equipo
+                    Ventas
                   </h2>
                 </div>
               </div>
@@ -145,8 +145,12 @@ function Contact() {
               >
                 <PhoneIcon size={16} />
 
-                Llamar ahora
+                Llamar a Ventas
               </a>
+
+              <p className="contact-card__description">
+                Oficina: <a href={contactLinks.office}>{contact.officeDisplay}</a>
+              </p>
             </article>
 
             <article className="contact-card">

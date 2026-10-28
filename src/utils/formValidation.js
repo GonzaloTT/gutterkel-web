@@ -1,6 +1,6 @@
 export const solutionOptions = [
   "Canalón continuo", "Cubre Pretil / Goterón", "Techos Falsos / Plafones",
-  "Sistema de Anclaje", "Aislante Térmico", "Otro",
+  "Sistema de Anclaje", "Otro",
 ];
 export const projectTypes = {
   residential: "Residencial", commercial: "Comercial", industrial: "Industrial",

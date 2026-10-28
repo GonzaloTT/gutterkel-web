@@ -7,7 +7,7 @@ import { contactValuesAfterSubmit, submitContact } from "../src/services/contact
 const payload = {
   name: "  Persona de prueba  ", company: "", phone: "+52 (442) 123-4567",
   email: "prueba@example.com", location: "Querétaro, Qro.", projectType: "residential",
-  solutions: ["Aislante Térmico"], details: "Cotización local de prueba.", turnstileToken: "",
+  solutions: ["Canalón continuo"], details: "Cotización local de prueba.", turnstileToken: "",
 };
 const request = (data = payload, options = {}) => new Request("http://localhost/api/contact", {
   method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data), ...options,
@@ -17,7 +17,7 @@ test("normalizes text, accepts optional company, international phone and all sol
   const result = validateContactPayload({ ...payload, solutions: solutionOptions, phone: "+44 20 7946 0958 ext. 123" });
   assert.equal(result.valid, true);
   assert.equal(result.data.name, "Persona de prueba");
-  assert.equal(result.data.solutions.length, 6);
+  assert.equal(result.data.solutions.length, 5);
 });
 
 test("all required fields, invalid email, blank details, no/unknown solutions", () => {
