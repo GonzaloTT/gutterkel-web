@@ -34,6 +34,10 @@ function AppRouter() {
             element={<Navigate to="/soluciones/sistema-de-anclaje" replace />}
           />
           <Route
+            path="/soluciones/aislante-termico"
+            element={<Navigate to="/soluciones" replace />}
+          />
+          <Route
             path="/soluciones/:slug"
             element={<SolutionDetail />}
           />

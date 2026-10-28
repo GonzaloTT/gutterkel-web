@@ -52,21 +52,10 @@
   display: grid;
 
   grid-template-columns:
-    repeat(6, minmax(0, 1fr));
+    repeat(2, minmax(0, calc((100% - 2 * var(--space-lg)) / 3)));
 
   gap: var(--space-lg);
-}
-
-.solutions-catalog__grid > * {
-  grid-column: span 2;
-}
-
-.solutions-catalog__grid > :nth-child(4) {
-  grid-column: 2 / span 2;
-}
-
-.solutions-catalog__grid > :nth-child(5) {
-  grid-column: 4 / span 2;
+  justify-content: center;
 }
 
 
@@ -80,11 +69,6 @@
       repeat(2, minmax(0, 1fr));
   }
 
-  .solutions-catalog__grid > *,
-  .solutions-catalog__grid > :nth-child(4),
-  .solutions-catalog__grid > :nth-child(5) {
-    grid-column: auto;
-  }
 }
 
 

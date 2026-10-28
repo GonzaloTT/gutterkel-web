@@ -56,18 +56,6 @@ const solutions = [
     href: "/soluciones/sistema-de-anclaje",
   },
 
-  {
-    id: "aislante-termico",
-    slug: "aislante-termico",
-    title: "Aislante Térmico",
-    category: "Aislamiento",
-    description:
-      "Solución orientada a mejorar el comportamiento térmico de la envolvente y aportar mayor confort al proyecto.",
-    benefit:
-      "Apoyo al desempeño térmico de distintos sistemas constructivos.",
-    image: null,
-    href: "/soluciones/aislante-termico",
-  },
 ];
 
 export default solutions;

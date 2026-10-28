@@ -12,7 +12,6 @@ const solutionNavLabels = {
   "cubre-pretil": "Cubre Pretil",
   "techos-falsos": "Plafones",
   "sistema-de-anclaje": "Sistema de Anclaje",
-  "aislante-termico": "Aislante",
 };
 
 function Header() {

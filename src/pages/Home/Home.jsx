@@ -6,9 +6,9 @@ import Hero from "../../components/Hero/Hero";
 import NumberedCard from "../../components/NumberedCard/NumberedCard";
 import SolutionCard from "../../components/SolutionCard/SolutionCard";
 
-import heroImage01 from "../../assets/images/home/home-hero-canalon-01.png";
+import heroImage01 from "../../assets/images/home/home-hero-canalon-03.png";
 import heroImage02 from "../../assets/images/home/home-hero-canalon-02.png";
-import heroImage03 from "../../assets/images/home/home-hero-cubre-pretil-01.jpeg";
+import heroImage03 from "../../assets/images/home/home-hero-cubre-pretil-02.png";
 
 import heroImage04 from "../../assets/images/home/home-hero-plafon-01.png";
 import heroImage05 from "../../assets/images/home/home-hero-proyecto-01.jpeg";
@@ -24,7 +24,6 @@ import {
   MeasureIcon,
   PhoneIcon,
   QuoteIcon,
-  ShieldIcon,
   ToolsIcon,
   TuneIcon,
   WhatsAppIcon,
@@ -36,7 +35,9 @@ function Home() {
   const heroSlides = [
     {
       image: heroImage01,
-      position: "center center",
+      position: "75% top",
+      backgroundSize: "cover",
+      mobilePosition: "35% top",
     },
     {
       image: heroImage02,
@@ -44,7 +45,9 @@ function Home() {
     },
     {
       image: heroImage03,
-      position: "center center",
+      position: "70% 35%",
+      backgroundSize: "cover",
+      mobilePosition: "65% top",
     },
     {
       image: heroImage04,
@@ -81,11 +84,6 @@ function Home() {
   ];
 
   const heroHighlights = [
-    {
-      title: "Garantía de 7 años",
-      description: "Respaldo estructural",
-      icon: <ShieldIcon />,
-    },
     {
       title: "Fabricación a medida",
       description: "Soluciones para cada proyecto",
@@ -170,7 +168,7 @@ function Home() {
       <Hero
         variant="home"
         eyebrow="Ingeniería europea · Fabricación a medida en México"
-        title="Soluciones que protegen y transforman tu fachada"
+        title="Soluciones que protegen y transforman tus espacios"
         description="Sistemas de canalización pluvial, protección arquitectónica y acabados fabricados a medida para residencias, desarrollos comerciales e industriales."
         slides={heroSlides}
         actions={heroActions}
@@ -205,7 +203,7 @@ function Home() {
           </div>
 
           <div className="home-solutions__grid">
-            {solutions.slice(0, 4).map((solution) => (
+            {solutions.map((solution) => (
               <SolutionCard
                 key={solution.id}
                 {...solution}
